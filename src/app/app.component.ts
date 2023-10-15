@@ -7,12 +7,13 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
   title = 'neckitwin';
+
   textButton = "Кликни кнопку";
   textFooter = "Футер проекта";
   pageTitle = 'Тестик';
 
   onMessage() {
-    alert("Тестик");
+    alert("Оп, и ты взломан! =)");
   }
 
   protected readonly onmessage = onmessage;
