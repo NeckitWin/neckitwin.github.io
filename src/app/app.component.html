@@ -1,5 +1,20 @@
-<div style="text-align: center;">
-  <h1>{{ pageTitle }}</h1>
-  <button (click)="onMessage()">{{textButton}}</button>
-  <footer>{{textFooter}}</footer>
+<!-- app.component.html -->
+<div class="container">
+  <div class="header">
+    <h1>NeckitWin</h1>
+    <p>Full Stack Developer</p>
+    <img src="assets/avatar.jpg" alt="NeckitWin" class="avatar">
+  </div>
+
+  <h2>Experience</h2>
+
+  <h2>Education</h2>
+  <p>ZSTI technikum nr1</p>
+
+  <h2>Skills</h2>
+
+  <div class="buttons">
+    <button (click)="toggleColor()">Zmienić kolor</button>
+    <button (click)="toggleVisibility()">Schować/Pokazać</button>
+  </div>
 </div>

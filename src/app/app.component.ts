@@ -6,15 +6,22 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'neckitwin';
+  private textColor = false;
+  private isVisible = true;
 
-  textButton = "Кликни кнопку";
-  textFooter = "Футер проекта";
-  pageTitle = 'Тестик';
-
-  onMessage() {
-    alert("Оп, и ты взломан! =)");
+  toggleColor() {
+    this.textColor = !this.textColor;
   }
 
-  protected readonly onmessage = onmessage;
+  toggleVisibility() {
+    this.isVisible = !this.isVisible;
+  }
+
+  getTextColor() {
+    return this.textColor ? 'red' : 'black';
+  }
+
+  getContentVisibility() {
+    return this.isVisible ? 'visible' : 'hidden';
+  }
 }
