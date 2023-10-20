@@ -6,22 +6,12 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  private textColor = false;
-  private isVisible = true;
+  personalInfo = {
+    name: 'Mykyta Vinohradov',
+    photo: 'https://avatars.githubusercontent.com/u/90260450?v=4',
+    email: 'neckit.v@gmail.com',
+    github: 'NeckitWin',
+  };
 
-  toggleColor() {
-    this.textColor = !this.textColor;
-  }
-
-  toggleVisibility() {
-    this.isVisible = !this.isVisible;
-  }
-
-  getTextColor() {
-    return this.textColor ? 'red' : 'black';
-  }
-
-  getContentVisibility() {
-    return this.isVisible ? 'visible' : 'hidden';
-  }
+  // другие разделы...
 }

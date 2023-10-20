@@ -1,20 +1,43 @@
-<!-- app.component.html -->
-<div class="container">
+<body>
+<div class="resume-container">
   <div class="header">
-    <h1>NeckitWin</h1>
-    <p>Full Stack Developer</p>
-    <img src="assets/avatar.jpg" alt="NeckitWin" class="avatar">
+    <img src="{{ personalInfo.photo }}" alt="{{ personalInfo.name }}" width="100">
+    <div>
+      <h1>{{ personalInfo.name }}</h1>
+      <p><a href="mailto:{{ personalInfo.email }}">{{ personalInfo.email }}</a></p>
+      <p><a href="https://github.com/{{ personalInfo.github }}">GitHub: {{ personalInfo.github }}</a></p>
+    </div>
   </div>
 
-  <h2>Experience</h2>
+  <div class="sections">
+    <!-- Контейнер для Опыта/Учёбы -->
+    <div class="section">
+      <div class="section-title">Doświadczenia</div>
+      <!-- содержимое раздела опыт/учёба -->
+      <ul>
+        <li>HTML & CSS</li>
+        <li>JS</li>
+        <li>JAVA</li>
+      </ul>
+    </div>
 
-  <h2>Education</h2>
-  <p>ZSTI technikum nr1</p>
+    <!-- Контейнер для Знаний -->
+    <div class="section">
+      <div class="section-title">Projekty</div>
+      <!-- содержимое раздела знаний -->
+      <li>Google</li>
+      <li>IOS</li>
+      <li>Minecraft</li>
+    </div>
 
-  <h2>Skills</h2>
+    <!-- Контейнер для Описания -->
+    <div class="section">
+      <div class="section-title">Informacja</div>
+      <!-- содержимое раздела описание -->
+      <p>My name is Niki.</p>
+    </div>
 
-  <div class="buttons">
-    <button (click)="toggleColor()">Zmienić kolor</button>
-    <button (click)="toggleVisibility()">Schować/Pokazać</button>
+    <!-- ...другие контейнеры -->
   </div>
 </div>
+</body>
