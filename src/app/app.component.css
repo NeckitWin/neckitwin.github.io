@@ -103,15 +103,43 @@ ul {
 }
 
 .social-link:hover {
-  background-color: #0056b3; /* Цвет фона при наведении */
+  background-color: #0056b3;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .profile-container {
-    width: 100%;
     flex-direction: column;
+    align-items: center;
+    width: 90%;
   }
-  .profile-section, .content-section {
+
+  .profile-details {
+    margin-top: 10px;
+    padding: 10px;
     width: 100%;
+    box-sizing: border-box;
+  }
+
+  .profile-details p {
+    margin: 5px 0;
+  }
+
+  .profile-section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .profile-details {
+    width: 100%;
+  }
+
+  .content-section {
+    width: 100%;
+  }
+
+
+  .social-list {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
