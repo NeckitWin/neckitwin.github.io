@@ -10,19 +10,17 @@ export class AppComponent {
   profileName = 'NeckitWin';
   isPro = true;
 
-  phoneNumber = '735-XXX-571';
+  highlightItems: string[] = ['PRO', 'IT', 'ARTIST'];
+
+  phoneNumber = '735-58X-XXX';
   country = 'Poland';
   email = 'mykyta.vinohradov@gmail.com';
   education = 'Technikum Nr I ZSTI';
 
-  // Другие переменные и данные
-
-  // Обработчик для позвонить по номеру телефона
   callPhoneNumber() {
     window.location.href = 'tel:' + this.phoneNumber;
   }
 
-  // Обработчик для отправки письма на адрес электронной почты
   sendEmail() {
     window.location.href = 'mailto:' + this.email;
   }
@@ -41,15 +39,10 @@ export class AppComponent {
   connectWithMeText = "If you want to chat about projects, ideas, or just have a friendly conversation, reach out to me on:";
   socialMedia = ['Discord', 'Instagram'];
 
-  getSocialMediaLink(platform: string): string {
-    if (platform === 'Discord') {
-      return 'https://discord.gg/gzYk2gcqAG';
-    } else if (platform === 'Instagram') {
-      return 'https://www.instagram.com/neckitwin';
-    }
-    // Добавьте другие платформы и их ссылки по мере необходимости
-    return '#'; // По умолчанию возвращаем "#" (заглушку)
-  }
+  socialMediaLinks: { platform: string, link: string }[] = [
+    { platform: 'Discord', link: 'https://discord.gg/gzYk2gcqAG' },
+    { platform: 'Instagram', link: 'https://www.instagram.com/neckitwin' }
+  ];
 
   moonText = "Is reality real? 🌙";
 }

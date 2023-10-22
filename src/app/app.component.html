@@ -1,12 +1,12 @@
-<div class="profile-container">
+<div class="container">
   <div class="profile-section">
     <h2>{{ profileName }}</h2>
     <img [src]="profileImageSrc" alt="Profile Image" class="profile-image">
+
     <div class="highlights">
-      <span *ngIf="isPro">PRO</span>
-      <span *ngIf="isPro">IT</span>
-      <span *ngIf="isPro">ARTIST</span>
+      <span *ngFor="let item of highlightItems">{{ item }}</span>
     </div>
+
     <div class="profile-details">
       <p><strong>Phone: </strong> <a href="javascript:void(0);" (click)="callPhoneNumber()">{{ phoneNumber }} 📞</a></p>
       <p><strong>Country: </strong> {{ country }} 🌎</p>
@@ -34,14 +34,24 @@
       <p>{{ connectWithMeText }}</p>
 
       <ul class="social-list">
-        <li *ngFor="let platform of socialMedia">
-          <a [href]="getSocialMediaLink(platform)" target="_blank" class="social-link">
-            {{ platform === 'Discord' ? 'Discord' : 'Instagram' }}
-          </a>
+        <li *ngFor="let link of socialMediaLinks">
+          <a [href]="link.link" target="_blank" class="social-link">{{ link.platform }}</a>
         </li>
       </ul>
 
       <p>{{ moonText }}</p>
     </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="section">
+    <h2>My projects</h2>
+  </div>
+</div>
+
+<div class="container">
+  <div class="section">
+    <h2>Links</h2>
   </div>
 </div>

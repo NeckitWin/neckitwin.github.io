@@ -1,18 +1,25 @@
+.container {
+  display: flex;
+  width: 80%;
+  margin: 20px auto;
+  background-color: #20232A;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  padding: 20px;
+}
+
 .container-info {
   margin-top: 20px;
   padding: 20px;
   border: 1px solid #61DAFB;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.profile-container {
-  display: flex;
-  align-items: flex-start;
-  width: 80%;
-  margin: 0 auto;
-  background-color: #20232A;
-  color: white;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -38,15 +45,6 @@
   text-decoration: underline;
 }
 
-
-.profile-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 30%;
-  padding: 20px;
-}
-
 .profile-image {
   width: 200px;
   border-radius: 50%;
@@ -54,14 +52,14 @@
 }
 
 .highlights {
-  min-width: 50%;
+  min-width: 75%;
   max-width: 100%;
   display: flex;
   justify-content: space-around;
 }
 
 .highlights span {
-  background-color: #61DAFB;
+  background-color: #ff5ce2;
   padding: 5px 10px;
   border-radius: 4px;
   display: inline-block;
@@ -106,8 +104,18 @@ ul {
   background-color: #0056b3;
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  padding: 20px;
+}
+
+
+/*Телефонная адаптация -------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
-  .profile-container {
+  .container {
     flex-direction: column;
     align-items: center;
     width: 90%;
