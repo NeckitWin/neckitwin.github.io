@@ -32,11 +32,11 @@ export class AppComponent {
   whatIDoText = "I am a Full-stack developer with a passion for programming, particularly my favorite language, Java. I also specialize in web development, utilizing the following languages:";
 
   skills = [
-    '⭐️⭐️⭐️ Java, my beloved programming language.',
+    '⭐️⭐️⭐️⌛️⌛️ Java, my beloved programming language.',
     '⭐️⭐️⭐️⭐️⭐️ HTML for content structuring.',
     '⭐️⭐️⭐️⭐️⭐️ CSS for style and elegance.',
-    '⭐️⭐️⭐️⭐️ JavaScript for interactivity.',
-    '⭐️⭐️ Node.js for server-side magic.'
+    '⭐️⭐️⭐️⌛️⌛️ JavaScript for interactivity.',
+    '⭐️⭐️⌛️⌛️⌛️ Node.js for server-side magic.'
   ];
 
   connectWithMeText = "If you want to chat about projects, ideas, or just have a friendly conversation, reach out to me on:";
@@ -44,7 +44,7 @@ export class AppComponent {
 
   getSocialMediaLink(platform: string): string {
     if (platform === 'Discord') {
-      return 'https://discord.com/';
+      return 'https://discord.gg/N3DDszjavg';
     } else if (platform === 'Instagram') {
       return 'https://www.instagram.com/neckitwin';
     }
