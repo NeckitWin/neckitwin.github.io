@@ -7,12 +7,12 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
   profileImageSrc = 'https://avatars.githubusercontent.com/u/90260450?v=4';
-  profileName = 'NecktiWin';
+  profileName = 'NeckitWin';
   isPro = true;
 
-  phoneNumber = '735-580-571';
+  phoneNumber = '735-XXX-571';
   country = 'Poland';
-  email = 'neckit.v@gmail.com';
+  email = 'mykyta.vinohradov@gmail.com';
   education = 'Technikum Nr I ZSTI';
 
   // Другие переменные и данные
@@ -32,11 +32,10 @@ export class AppComponent {
   whatIDoText = "I am a Full-stack developer with a passion for programming, particularly my favorite language, Java. I also specialize in web development, utilizing the following languages:";
 
   skills = [
-    '⭐️⭐️⭐️⌛️⌛️ Java, my beloved programming language.',
-    '⭐️⭐️⭐️⭐️⭐️ HTML for content structuring.',
-    '⭐️⭐️⭐️⭐️⭐️ CSS for style and elegance.',
-    '⭐️⭐️⭐️⌛️⌛️ JavaScript for interactivity.',
-    '⭐️⭐️⌛️⌛️⌛️ Node.js for server-side magic.'
+    '⭐️⭐️⌛️⌛️⌛️ Java, my beloved programming language.',
+    '⭐️⭐️⭐️⭐️⌛️ HTML for content structuring.',
+    '⭐️⭐️⭐️⭐️⌛️ CSS for style and elegance.',
+    '⭐️⭐️⌛️⌛️⌛️ JavaScript for interactivity.'
   ];
 
   connectWithMeText = "If you want to chat about projects, ideas, or just have a friendly conversation, reach out to me on:";
@@ -44,7 +43,7 @@ export class AppComponent {
 
   getSocialMediaLink(platform: string): string {
     if (platform === 'Discord') {
-      return 'https://discord.gg/N3DDszjavg';
+      return 'https://discord.gg/gzYk2gcqAG';
     } else if (platform === 'Instagram') {
       return 'https://www.instagram.com/neckitwin';
     }
