@@ -1,43 +1,42 @@
-<body>
-<div class="resume-container">
-  <div class="header">
-    <img src="{{ personalInfo.photo }}" alt="{{ personalInfo.name }}" width="100">
-    <div>
-      <h1>{{ personalInfo.name }}</h1>
-      <p><a href="mailto:{{ personalInfo.email }}">{{ personalInfo.email }}</a></p>
-      <p><a href="https://github.com/{{ personalInfo.github }}">GitHub: {{ personalInfo.github }}</a></p>
+<div class="profile-container">
+  <div class="profile-section">
+    <img [src]="profileImageSrc" alt="Profile Image" class="profile-image">
+    <h2>{{ profileName }}</h2>
+    <div class="highlights">
+      <span *ngIf="isPro">PRO</span>
     </div>
-  </div>
+    <!-- Добавляем дополнительную информацию с использованием переменных -->
+    <div class="profile-details">
+      <p><strong>Phone: </strong> <a href="javascript:void(0);" (click)="callPhoneNumber()">{{ phoneNumber }} 📞</a></p>
+      <p><strong>Country: </strong> {{ country }} 🌎</p>
+      <p><strong>Email: </strong> <a href="javascript:void(0);" (click)="sendEmail()">{{ email }} ✉️</a></p>
+      <p><strong>Education: </strong> {{ education }} 📚</p>
+      <!-- Добавьте другие переменные по желанию -->
+    </div>
+  <!-- Остальная разметка и данные -->
+</div>
 
-  <div class="sections">
-    <!-- Контейнер для Опыта/Учёбы -->
-    <div class="section">
-      <div class="section-title">Doświadczenia</div>
-      <!-- содержимое раздела опыт/учёба -->
+<div class="content-section">
+    <div class="about-me container-info">
+      <h3>About Me</h3>
+      <p>{{ aboutMeText }}</p>
+    </div>
+
+    <div class="what-i-do container-info">
+      <h3>What I Do</h3>
+      <p>{{ whatIDoText }}</p>
       <ul>
-        <li>HTML & CSS</li>
-        <li>JS</li>
-        <li>JAVA</li>
+        <li *ngFor="let skill of skills">{{ skill }}</li>
       </ul>
     </div>
 
-    <!-- Контейнер для Знаний -->
-    <div class="section">
-      <div class="section-title">Projekty</div>
-      <!-- содержимое раздела знаний -->
-      <li>Google</li>
-      <li>IOS</li>
-      <li>Minecraft</li>
+    <div class="connect-with-me container-info">
+      <h3>Connect With Me</h3>
+      <p>{{ connectWithMeText }}</p>
+      <ul>
+        <li *ngFor="let platform of socialMedia">{{ platform }}</li>
+      </ul>
+      <p>{{ moonText }}</p>
     </div>
-
-    <!-- Контейнер для Описания -->
-    <div class="section">
-      <div class="section-title">Informacja</div>
-      <!-- содержимое раздела описание -->
-      <p>My name is Niki.</p>
-    </div>
-
-    <!-- ...другие контейнеры -->
   </div>
 </div>
-</body>
