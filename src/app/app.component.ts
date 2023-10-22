@@ -27,19 +27,30 @@ export class AppComponent {
     window.location.href = 'mailto:' + this.email;
   }
 
-  aboutMeText = "Hello! 👋 I'm Nikita. What if I told you that everything you see isn't real? It's all just code. 💡";
+  aboutMeText = "Hello! 👋 I'm Nikita. Just coder. 💡";
 
   whatIDoText = "I am a Full-stack developer with a passion for programming, particularly my favorite language, Java. I also specialize in web development, utilizing the following languages:";
 
   skills = [
-    '⭐️⭐️ Java, my beloved programming language.',
+    '⭐️⭐️⭐️ Java, my beloved programming language.',
     '⭐️⭐️⭐️⭐️⭐️ HTML for content structuring.',
     '⭐️⭐️⭐️⭐️⭐️ CSS for style and elegance.',
-    '⭐️⭐️⭐️ JavaScript for interactivity.',
+    '⭐️⭐️⭐️⭐️ JavaScript for interactivity.',
     '⭐️⭐️ Node.js for server-side magic.'
   ];
 
   connectWithMeText = "If you want to chat about projects, ideas, or just have a friendly conversation, reach out to me on:";
   socialMedia = ['Discord', 'Instagram'];
-  moonText = "What if you couldn't wake up? 🌙";
+
+  getSocialMediaLink(platform: string): string {
+    if (platform === 'Discord') {
+      return 'https://discord.com/';
+    } else if (platform === 'Instagram') {
+      return 'https://www.instagram.com/neckitwin';
+    }
+    // Добавьте другие платформы и их ссылки по мере необходимости
+    return '#'; // По умолчанию возвращаем "#" (заглушку)
+  }
+
+  moonText = "Is reality real? 🌙";
 }
