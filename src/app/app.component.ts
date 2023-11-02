@@ -41,7 +41,8 @@ export class AppComponent {
 
   socialMediaLinks: { platform: string, link: string }[] = [
     { platform: 'Discord', link: 'https://discord.gg/gzYk2gcqAG' },
-    { platform: 'Instagram', link: 'https://www.instagram.com/neckitwin' }
+    { platform: 'Instagram', link: 'https://www.instagram.com/neckitwin' },
+    { platform: 'Telegram', link: 'https://t.me/neckitwin' }
   ];
 
   moonText = "Is reality real? 🌙";
