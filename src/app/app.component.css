@@ -30,6 +30,7 @@
   border: 1px solid #61fbae;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 320px;
 }
 
 .profile-details p {
@@ -49,6 +50,15 @@
   width: 200px;
   border-radius: 50%;
   margin-bottom: 10px;
+}
+
+.connect-with-me{
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #61fbae;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 320px;
 }
 
 .highlights {
@@ -93,11 +103,11 @@ ul {
 /* Стили для кнопок-ссылок */
 .social-link {
   text-decoration: none;
-  background-color: #007BFF; /* Цвет фона */
-  color: white; /* Цвет текста */
-  padding: 8px 12px; /* Отступы вокруг текста */
-  border-radius: 4px; /* Скругленные углы */
-  transition: background-color 0.2s ease; /* Плавное изменение цвета при наведении */
+  background-color: #007BFF;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
 }
 
 .social-link:hover {

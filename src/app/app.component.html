@@ -13,6 +13,19 @@
       <p><strong>Email: </strong> <a href="javascript:void(0);" (click)="sendEmail()">{{ email }} ✉️</a></p>
       <p><strong>Education: </strong> {{ education }} 📚</p>
     </div>
+
+    <div class="connect-with-me">
+      <h3>Connect With Me</h3>
+      <p>{{ connectWithMeText }}</p>
+
+      <ul class="social-list">
+        <li *ngFor="let link of socialMediaLinks">
+          <a [href]="link.link" target="_blank" class="social-link">{{ link.platform }}</a>
+        </li>
+      </ul>
+
+      <p>{{ moonText }}</p>
+    </div>
 </div>
 
 <div class="content-section">
@@ -28,19 +41,9 @@
         <li *ngFor="let skill of skills">{{ skill }}</li>
       </ul>
     </div>
-
-    <div class="connect-with-me container-info">
-      <h3>Connect With Me</h3>
-      <p>{{ connectWithMeText }}</p>
-
-      <ul class="social-list">
-        <li *ngFor="let link of socialMediaLinks">
-          <a [href]="link.link" target="_blank" class="social-link">{{ link.platform }}</a>
-        </li>
-      </ul>
-
-      <p>{{ moonText }}</p>
-    </div>
+  <div class="myGoals container-info">
+    <h3>My Gols</h3>
+  </div>
   </div>
 </div>
 

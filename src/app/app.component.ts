@@ -30,14 +30,14 @@ export class AppComponent {
   whatIDoText = "I am a Full-stack developer with a passion for programming, particularly my favorite language, Java. I also specialize in web development, utilizing the following languages:";
 
   skills = [
-    '⭐️⭐️⌛️⌛️⌛️ Java, my beloved programming language.',
-    '⭐️⭐️⭐️⭐️⌛️ HTML for content structuring.',
+    '⭐️⭐️⭐️⌛️⌛️ Java, my beloved programming language.',
+    '⭐️⭐️⭐️⭐️⭐️ HTML for content structuring.',
     '⭐️⭐️⭐️⭐️⌛️ CSS for style and elegance.',
-    '⭐️⭐️⌛️⌛️⌛️ JavaScript for interactivity.'
+    '⭐️⭐️⭐️⌛️⌛️ JavaScript for interactivity.'
   ];
 
-  connectWithMeText = "If you want to chat about projects, ideas, or just have a friendly conversation, reach out to me on:";
-  socialMedia = ['Discord', 'Instagram'];
+  connectWithMeText = "My social:";
+  socialMedia = ['Discord', 'Instagram', 'Telegram'];
 
   socialMediaLinks: { platform: string, link: string }[] = [
     { platform: 'Discord', link: 'https://discord.gg/gzYk2gcqAG' },
