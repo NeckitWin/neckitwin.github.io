@@ -13,4 +13,8 @@ export class AppComponent {
     { key: "react", value: "⭐⭐⭐⭐⭐" },
     { key: "python", value: "⭐⭐⭐⭐⭐" },
   ];
+
+  links = [
+    { text: "GitHub", link: "https://github.com/neckitwin", icon: "https://static-00.iconduck.com/assets.00/github-icon-2048x1988-jzvzcf2t.png", color: "black" },
+  ]
 }

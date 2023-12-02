@@ -12,11 +12,10 @@
             <span>{{ experience.key }}</span><span>{{ experience.value }}</span>
           </li>
         </ul>
-
       </div>
     </div>
-    <div class="links-content">
-
+    <div class="links-content" *ngFor="let links of links">
+      <a href="{{links.link}}" style="background-color:{{links.color}};" class="link" target="_blank"><img class="link-img" src="{{ links.icon }}" alt="icon">{{links.text}}</a>
     </div>
   </div>
 </div>
