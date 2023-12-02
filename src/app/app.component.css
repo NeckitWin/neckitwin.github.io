@@ -12,8 +12,8 @@
 }
 
 .background-content {
-  width: 75%;
-  height: 75%;
+  width: 1500px;
+  height: 700px;
   background-color: rgba(0, 0, 0, 0.9);
   border-radius: 50px;
   /*Сделай неоновые тени блоку*/
@@ -30,7 +30,7 @@
 }
 
 .profile-content{
-  border-right: 1px solid white;
+  border-right: 1px white solid;
   width: 100%;
   grid-area: 0,0,1,1;
   display: flex;
@@ -77,8 +77,6 @@
   width: 100%;
 }
 
-/* Добавить классу info анимацию снизу двигающиеся полоски */
-
 .info{
   color: white;
   list-style-type: georgian;
@@ -112,8 +110,13 @@
 .links-content {
   grid-area: 0,1,1,2;
   color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: 30px;
+  justify-content: center;
 }
+
 .link{
   border: 5px solid white;
   color: white;
@@ -126,19 +129,20 @@
   font-size: 20px;
   font-weight: bold;
   margin: 10px;
-  width: 300px;
+  width: 350px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
   transition: 0.3s ease;
 }
 .link:hover{
   transition: 0.3s;
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.9);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .link-img{
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
+  padding-right: 5px;
 }
 
 h1{
