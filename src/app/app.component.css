@@ -164,10 +164,10 @@ h1{
 @media only screen and (max-width: 768px) {
   .background-content {
     width: 100%;
-    height: auto;
     border-radius: 0;
     display: flex;
     flex-wrap: wrap;
+    height: 100%;
   }
 
   .profile-content {
@@ -201,6 +201,9 @@ h1{
 
   .link {
     margin: 10px 0;
+    font-size: 14px;
+    height: 30px;
+    width: 155px;
   }
 
   h1 {
