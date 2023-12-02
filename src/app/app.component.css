@@ -1,163 +1,65 @@
-.container {
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://cdnb.artstation.com/p/assets/images/images/024/538/827/original/pixel-jeff-clipa-s.gif?1582740711");
+  background-size: cover;
   display: flex;
-  width: 80%;
-  margin: 20px auto;
-  background-color: #20232A;
-  color: white;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  justify-content: center;
+  align-items: center;
 }
 
-.profile-section {
+.background-content {
+  width: 2000px;
+  height: 1000px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 50px;
+  /*Сделай неоновые тени блоку*/
+  box-shadow: 0 0 10px rgba(200, 0, 255, 0.5),
+  0 0 20px rgba(200, 0, 255, 0.5),
+  0 0 30px rgba(200, 0, 255, 0.5),
+  0 0 40px rgba(200, 0, 255, 0.5),
+  0 0 50px rgba(200, 0, 255, 0.5),
+  0 0 60px rgba(200, 0, 255, 0.5),
+  0 0 70px rgba(200, 0, 255, 0.5),
+  0 0 80px rgba(200, 0, 255, 0.5);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.profile-content {
+  padding: 50px;
+  grid-area: 0,0,1,1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30%;
-  padding: 20px;
 }
 
-.container-info {
-  margin-top: 20px;
-  padding: 20px;
-  border: 1px solid #61DAFB;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.profile-details {
-  margin-top: 20px;
-  padding: 20px;
-  border: 1px solid #61fbae;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  max-width: 320px;
-}
-
-.profile-details p {
-  margin: 8px 0;
-}
-
-.profile-details a {
-  text-decoration: none;
-  color: #007BFF; /* Цвет ссылок */
-}
-
-.profile-details a:hover {
-  text-decoration: underline;
-}
-
-.profile-image {
-  width: 200px;
+.avatar-img{
   border-radius: 50%;
-  margin-bottom: 10px;
+  width: 300px;
+  height: 300px;
 }
 
-.connect-with-me{
-  margin-top: 20px;
-  padding: 20px;
-  border: 1px solid #61fbae;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  max-width: 320px;
+.links-content {
+  grid-area: 0,1,1,2;
 }
 
-.highlights {
-  min-width: 75%;
-  max-width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.highlights span {
-  background-color: #ff5ce2;
-  padding: 5px 10px;
-  border-radius: 4px;
-  display: inline-block;
-  margin-top: 10px;
-}
-
-.content-section {
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  padding: 20px;
-}
-
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-/* Стили для списка социальных ссылок */
-.social-list {
-  list-style-type: none;
-  display: flex;
-  padding: 0;
-}
-
-/* Стили для каждой ссылки в списке */
-.social-list li {
-  margin-right: 10px; /* Добавьте отступ между кнопками */
-}
-
-/* Стили для кнопок-ссылок */
-.social-link {
-  text-decoration: none;
-  background-color: #007BFF;
+h1{
   color: white;
-  padding: 8px 12px;
-  border-radius: 4px;
-  transition: background-color 0.2s ease;
-}
-
-.social-link:hover {
-  background-color: #0056b3;
-}
-
-.section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 30%;
-  padding: 20px;
-}
-
-
-/*Телефонная адаптация -------------------------------------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-  }
-
-  .profile-details {
-    margin-top: 10px;
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .profile-details p {
-    margin: 5px 0;
-  }
-
-  .profile-section {
-    width: 100%;
-    text-align: center;
-  }
-
-  .profile-details {
-    width: 100%;
-  }
-
-  .content-section {
-    width: 100%;
-  }
-
-
-  .social-list {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+  font-size: 50px;
+/*  Добавь неоновые тени тексту*/
+  text-shadow: 0 0 10px rgba(255, 0, 241, 0.5),
+  0 0 20px rgba(255, 0, 241, 0.5),
+  0 0 30px rgba(255, 0, 241, 0.5),
+  0 0 40px rgba(255, 0, 241, 0.5),
+  0 0 50px rgba(255, 0, 241, 0.5),
+  0 0 60px rgba(255, 0, 241, 0.5),
+  0 0 70px rgba(255, 0, 241, 0.5),
+  0 0 80px rgba(255, 0, 241, 0.5),
+  0 0 90px rgba(255, 0, 241, 0.5),
+  0 0 100px rgba(255, 0, 241, 0.5),
+  0 0 110px rgba(255, 0, 241, 0.5);
 }
