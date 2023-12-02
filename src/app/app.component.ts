@@ -6,4 +6,11 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  experiences = [
+    { key: "java", value: "⭐⭐⭐⭐⭐" },
+    { key: "javascript", value: "⭐⭐⭐⭐⭐" },
+    { key: "angular", value: "⭐⭐⭐⭐⭐" },
+    { key: "react", value: "⭐⭐⭐⭐⭐" },
+    { key: "python", value: "⭐⭐⭐⭐⭐" },
+  ];
 }

@@ -6,7 +6,12 @@
         <h1>NeckitWin</h1>
         <p class="description-profile">FullStack Developer</p>
       </div>
-      <div>
+      <div class="profile-info">
+        <ul class="info">
+          <li *ngFor="let experience of experiences">
+            <span>{{ experience.key }}</span><span>{{ experience.value }}</span>
+          </li>
+        </ul>
 
       </div>
     </div>
