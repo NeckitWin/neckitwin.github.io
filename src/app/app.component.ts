@@ -19,6 +19,7 @@ export class AppComponent {
     {  link: "https://discord.gg/gzYk2gcqAG", text: "Мой Discord сервер", icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/discord-white-icon.png", color:"#5865F2" },
     { link: "https://arcaneworld.su/", text: "Мой проект майнкрафт с модами", icon: "https://arcaneworld.su/image/logo.png", color: "#ff4747" },
     { link: "https://discord.gg/arcaneworldsu", text: "Дискорд проекта", icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/discord-white-icon.png", color: "#5865F2" },
+    { link: "https://www.youtube.com/channel/UCfZ_o1cSMIdVUwIf5wiB5Ag", text: "Мой ютуб канал", icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-white-icon.png", color: "#FF0000" },
     { link: "https://t.me/neckitwin", text: "Мой Telegram канал", icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/telegram-white-icon.png", color: "#0088CC" },
     { link: "https://www.instagram.com/neckitwin/", text: "Мой инстаграм", icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png", color: "#E1306C" },
     { link: "https://tiktok.com/neckitwin", text:"Мой тикиток", icon: "https://cdn0.iconfinder.com/data/icons/logos-brands-7/512/TikTok_logo_app0-512.png", color: "#9b002c" },
