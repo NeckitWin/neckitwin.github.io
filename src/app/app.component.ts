@@ -18,7 +18,7 @@ export class AppComponent {
     { link: "https://github.com/neckitwin", text: "GitHub", icon: "https://static-00.iconduck.com/assets.00/github-icon-2048x1988-jzvzcf2t.png", color: "#000000" },
     {  link: "https://discord.gg/gzYk2gcqAG", text: "Мой Discord сервер", icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/discord-white-icon.png", color:"#5865F2" },
     { link: "https://arcaneworld.su/", text: "Мой проект майнкрафт с модами", icon: "https://arcaneworld.su/image/logo.png", color: "#ff4747" },
-    { link: "https://discord.gg/arcaneworldsu", text: "Дискорд проекта", icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/discord-white-icon.png", color: "#5865F2" },
+    { link: "https://discord.gg/DuGqY29kJ6", text: "Дискорд проекта", icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/discord-white-icon.png", color: "#5865F2" },
     { link: "https://www.youtube.com/channel/UCfZ_o1cSMIdVUwIf5wiB5Ag", text: "Мой ютуб канал", icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-white-icon.png", color: "#FF0000" },
     { link: "https://t.me/neckitwin", text: "Мой Telegram канал", icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/telegram-white-icon.png", color: "#0088CC" },
     { link: "https://www.instagram.com/neckitwin/", text: "Мой инстаграм", icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png", color: "#E1306C" },
