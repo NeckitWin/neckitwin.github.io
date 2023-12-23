@@ -14,7 +14,6 @@
   height: 750px;
   background-color: rgba(0, 0, 0, 0.9);
   border-radius: 50px;
-  /*Сделай неоновые тени блоку*/
   box-shadow: 0 0 10px rgba(200, 0, 255, 0.5),
   0 0 20px rgba(200, 0, 255, 0.5),
   0 0 30px rgba(200, 0, 255, 0.5),
