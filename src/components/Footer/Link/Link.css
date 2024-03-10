@@ -5,11 +5,12 @@
     border-radius: 20px;
     padding: 10px 20px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     color: rgb(255,0,59,0.5);
     box-shadow: 0 0 21px rgb(255,0,59,0.5);
     transition: 0.3s ease;
+    width: 420px;
 }
 
 .footer-link:hover {
