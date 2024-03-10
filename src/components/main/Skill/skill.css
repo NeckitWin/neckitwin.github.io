@@ -1,0 +1,28 @@
+.skill {
+    width: 480px;
+    height: 420px;
+    color: #FFFFFF;
+    box-shadow: 0 0 81px rgb(255,0,59,0.5);
+    border-radius: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+.skill img {
+    width: 151px;
+    height: 151px;
+    background-size: cover;
+    transition: 0.3s ease;
+}
+.skill img:hover {
+    transform: translateY(-10px);
+}
+.skill h2 {
+    font-size: 27px;
+}
+.skill p {
+    font-size: 21px;
+    text-align: center;
+}

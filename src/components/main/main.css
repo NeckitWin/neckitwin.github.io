@@ -1,0 +1,62 @@
+main{
+    background-color: #000000;
+}
+
+.skills-bg {
+    position: relative;
+    top: -92px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.portfolio, .contact-bg, .experience-bg {
+    margin: auto;
+    width: 1500px;
+}
+
+.portfolio h2, .contact-bg h2, .experience-bg h2 {
+    color: rgb(255,0,59);
+    font-size: 37.5px;
+    text-shadow: 0 0 21px rgb(255,0,59);;
+}
+
+.portfolio p, .contact-bg p , .experience-bg p{
+    color: #8f8e8e;
+    font-size: 25px;
+}
+
+.portfolio>a {
+    color: rgb(255,0,59);
+    font-size: 25px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+.portfolio a:hover{
+    text-decoration: underline;
+}
+
+.portfolio-bimg, .portfolio-simg{
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portfolio-bimg a img{
+    width: 665px;
+    height: 365px;
+}
+
+.portfolio-simg a img {
+    width: 300px;
+    height: 300px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

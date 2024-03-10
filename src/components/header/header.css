@@ -18,3 +18,9 @@ header{
     border-radius: 50%;
     box-shadow: 0 0 50px #FFFFFF;
 }
+.header-content h1 {
+    font-size: 42px;
+}
+.header-content p {
+    font-size: 25px;
+}
