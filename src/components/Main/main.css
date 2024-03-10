@@ -64,3 +64,32 @@ main{
 .contact-bg {
     padding-bottom: 50px;
 }
+
+@media (max-width: 768px) {
+    .portfolio, .contact-bg, .experience-bg {
+        width: 100%;
+    }
+    .portfolio-bimg a img{
+        width: 100%;
+        height: 100%;
+    }
+    .portfolio-simg a img {
+        width: 100%;
+        height: 100%;
+    }
+    .portfolio h2, .contact-bg h2, .experience-bg h2 {
+        font-size: 25px;
+    }
+    .portfolio p, .contact-bg p , .experience-bg p{
+        font-size: 20px;
+    }
+    .contacts {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-bg {
+        padding-bottom: 0;
+    }
+}
