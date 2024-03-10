@@ -1,9 +1,10 @@
 footer {
     height: 400px;
     width: 100%;
-    background-color: #0e0e0e;
+    background: linear-gradient(-333deg, rgba(30, 0, 0, 1) 0%, rgba(70, 0,0, 1) 100%);
     display: flex;
     justify-content: center;
+    box-shadow: 0 0 50px rgb(60, 0, 0);
 }
 
 footer>img {
@@ -22,6 +23,7 @@ footer div {
     align-items: center;
     flex-direction: column;
     height: 300px;
+    margin-top: 50px;
 }
 
 @media (max-width: 768px) {
