@@ -2,15 +2,24 @@ footer {
     height: 400px;
     width: 100%;
     background-color: #0e0e0e;
+    display: flex;
+    justify-content: center;
 }
 
-footer img {
+footer>img {
     width: 400px;
     height: 300px;
     margin: 20px;
     transition: 0.3s ease;
     position: relative;
     top: -50px;
-    left: 60%;
+    left: 15%;
 }
 
+footer div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+}

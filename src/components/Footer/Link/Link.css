@@ -1,0 +1,27 @@
+.footer-link {
+    text-decoration: none;
+    font-size: 25px;
+    background-color: #131313;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255,0,59,0.5);
+    box-shadow: 0 0 21px rgb(255,0,59,0.5);
+    transition: 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #FFFFFF;
+    box-shadow: 0 0 21px rgb(255,255,255);
+    transform: translateX(-20px);
+}
+
+.footer-link img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-size: cover;
+}
