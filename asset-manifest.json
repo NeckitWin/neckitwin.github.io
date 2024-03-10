@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/NeckitWin/neckitwin.github.io/static/css/main.c369bef2.css",
+    "main.js": "/NeckitWin/neckitwin.github.io/static/js/main.609888c6.js",
+    "index.html": "/NeckitWin/neckitwin.github.io/index.html",
+    "main.c369bef2.css.map": "/NeckitWin/neckitwin.github.io/static/css/main.c369bef2.css.map",
+    "main.609888c6.js.map": "/NeckitWin/neckitwin.github.io/static/js/main.609888c6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c369bef2.css",
+    "static/js/main.609888c6.js"
+  ]
+}
