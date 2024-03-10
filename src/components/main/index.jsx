@@ -12,7 +12,7 @@ class Main extends React.Component {
                 {
                     img: "icons/code.png",
                     title: "DEVELOPER",
-                    description: "Complete full stack tasks, crafting UI templates."
+                    description: "Full stack, development of graphic interfaces, Working with interactivity and animations."
                 }, {
                     img: "icons/owner.png",
                     title: "OWNER PROJECT",
@@ -128,7 +128,6 @@ class Main extends React.Component {
                 <div className="experience-bg">
                     <h2>MY EXPERIENCE</h2>
                     <p>What I have experience working with</p>
-
                     <div className="contacts">
                         {this.state.experience.map((el) => (
                             <Contact key={el.title} img={el.img} title={el.title} description={el.description}
