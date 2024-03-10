@@ -1,0 +1,13 @@
+.bimg img {
+    width: 665px;
+    height: 365px;
+    border-radius: 28px;
+}
+
+.bimg{
+    transition: 0.5s ease;
+}
+
+.bimg:hover {
+    transform: scale(1.03);
+}
