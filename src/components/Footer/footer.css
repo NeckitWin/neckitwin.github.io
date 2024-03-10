@@ -1,24 +1,16 @@
 footer {
-    height: 690px;
+    height: 400px;
     width: 100%;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    background: #ff0045;
+    background-color: #0e0e0e;
 }
 
-.wave {
-    background: url(.) repeat-x;
+footer img {
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    transition: 0.3s ease;
     position: relative;
-    width: 6400px;
-    top: -198px;
-    left: 0;
-    height: 198px;
-    transform: translate(0, 0);
-    animation: wave 7s ease infinite;
+    top: -50px;
+    left: 60%;
 }
 
-@keyframes wave {
-    0% { margin-left: 0; }
-    100% { margin-left: -1600px;}
-}

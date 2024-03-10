@@ -20,7 +20,7 @@ class Main extends React.Component {
                 }, {
                     img: "icons/design.png",
                     title: "DESIGNER",
-                    description: "Creating a menu, website template development."
+                    description: "Drawing textures, creating user interface, working with 3D models."
                 }
             ],
             bigimg: [
