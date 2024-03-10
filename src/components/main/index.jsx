@@ -128,23 +128,24 @@ class Main extends React.Component {
                 <div className="experience-bg">
                     <h2>MY EXPERIENCE</h2>
                     <p>What I have experience working with</p>
-                </div>
-                <div className="contacts">
-                    {this.state.experience.map((el) => (
-                        <Contact key={el.title} img={el.img} title={el.title} description={el.description}
-                                 link={el.link}/>
-                    ))}
+
+                    <div className="contacts">
+                        {this.state.experience.map((el) => (
+                            <Contact key={el.title} img={el.img} title={el.title} description={el.description}
+                                     link={el.link}/>
+                        ))}
+                    </div>
                 </div>
 
                 <div className="contact-bg">
                     <h2>CONTACT</h2>
                     <p>Feel free to contact me for any project or collaboration</p>
-                </div>
-                <div className="contacts">
-                    {this.state.contacts.map((el) => (
-                        <Contact key={el.title} img={el.img} title={el.title} description={el.description}
-                                 link={el.link}/>
-                    ))}
+                    <div className="contacts">
+                        {this.state.contacts.map((el) => (
+                            <Contact key={el.title} img={el.img} title={el.title} description={el.description}
+                                     link={el.link}/>
+                        ))}
+                    </div>
                 </div>
             </main>
         );
