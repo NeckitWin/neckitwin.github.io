@@ -61,7 +61,7 @@ class Main extends React.Component {
                 }, {
                     title: "NODE.JS",
                     description: "REACT, VUE, ANGULAR",
-                    link: "https://www.w3schools.com/whatis/",
+                    link: "https://nodejs.org/",
                     img: "experience/node.png"
                 }, {
                     title: "DATABASE",
