@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: black;
+    background-color: #0e0e0e;
 }
 .skill img {
     width: 151px;
@@ -21,8 +21,14 @@
 }
 .skill h2 {
     font-size: 27px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
 }
 .skill p {
     font-size: 21px;
     text-align: center;
+    font-weight: lighter;
+    width: 360px;
+    line-height: 31px;
 }

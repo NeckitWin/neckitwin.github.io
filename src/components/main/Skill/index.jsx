@@ -7,8 +7,8 @@ class Skill extends React.Component {
         return (
             <div className="skill">
                 <img src={img} alt="icon"/>
-                <h2>{title}</h2>
-                <p>{description}</p>
+                    <h2>{title}</h2>
+                    <p>{description}</p>
             </div>
         )
     }
