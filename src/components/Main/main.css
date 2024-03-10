@@ -60,3 +60,7 @@ main{
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+.contact-bg {
+    padding-bottom: 50px;
+}
