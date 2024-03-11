@@ -1,4 +1,3 @@
-import React from "react";
 import "./pimg.css";
 
 const Pimg = ({img, link}) => {

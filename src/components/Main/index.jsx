@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './main.css';
 import Skill from './Skill';
 import Pimg from './Pimg';

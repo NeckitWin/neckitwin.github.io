@@ -1,4 +1,3 @@
-import React from "react";
 import "./contact.css";
 
 const Contact = ({link, img, title, description}) => {
