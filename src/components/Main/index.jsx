@@ -80,7 +80,7 @@ const Main = () => {
         },
         {
             title: "LINUX",
-            description: "Work with Unbuntu servers",
+            description: "Work with Ubuntu servers",
             link: "https://www.linux.org/",
             img: "experience/linux.png"
         }
