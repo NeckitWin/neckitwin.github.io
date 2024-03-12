@@ -25,8 +25,8 @@ const Main = () => {
 
     const [bigimg] = useState([
         {
-            img: "https://cezim.pl/wp-content/uploads/2021/12/empty.jpg",
-            link: "#"
+            img: "./img/portfolio/gallery.png",
+            link: "https://neckitwin.github.io/Gallery/"
         },
         {
             img: "https://cezim.pl/wp-content/uploads/2021/12/empty.jpg",
@@ -126,7 +126,7 @@ const Main = () => {
                 <p>Check out some of my work</p>
                 <div className="portfolio-bimg">
                     {bigimg.map((el) => (
-                        <Pimg img={el.img}/>
+                        <Pimg link={el.link} img={el.img}/>
                     ))}
                 </div>
                 <div className="portfolio-simg">
