@@ -29,7 +29,7 @@
 
 @media (max-width: 768px) {
     .footer-link {
-        width: 300px;
-        margin-top: 20px;
+        width: 280px;
+        margin-bottom: 20px;
     }
 }

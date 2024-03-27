@@ -1,11 +1,10 @@
-import { useState } from 'react';
 import './main.css';
 import Skill from './Skill';
 import Pimg from './Pimg';
 import Contact from './Contact';
 
 const Main = () => {
-    const [skills] = useState([
+    const skills = [
         {
             img: "icons/code.png",
             title: "DEVELOPER",
@@ -21,9 +20,9 @@ const Main = () => {
             title: "DESIGNER",
             description: "Drawing textures, creating user interface, working with 3D models."
         }
-    ]);
+    ]
 
-    const [bigimg] = useState([
+    const bigimg = [
         {
             img: "./img/portfolio/gallery.png",
             link: "https://neckitwin.github.io/Gallery/"
@@ -32,9 +31,9 @@ const Main = () => {
             img: "https://cezim.pl/wp-content/uploads/2021/12/empty.jpg",
             link: "#"
         }
-    ]);
+    ];
 
-    const [smallimg] = useState([
+    const smallimg = [
         {
             img: "https://cezim.pl/wp-content/uploads/2021/12/empty.jpg",
             link: "#"
@@ -51,9 +50,9 @@ const Main = () => {
             img: "https://cezim.pl/wp-content/uploads/2021/12/empty.jpg",
             link: "#"
         }
-    ]);
+    ]
 
-    const [experience] = useState([
+    const experience = [
         {
             title: "JAVA",
             description: "Minecraft mods, server support",
@@ -84,9 +83,9 @@ const Main = () => {
             link: "https://www.linux.org/",
             img: "experience/linux.png"
         }
-    ]);
+    ]
 
-    const [contacts] = useState([
+    const contacts= [
         {
             img: "contacts/github.png",
             title: "GITHUB",
@@ -111,7 +110,7 @@ const Main = () => {
             description: "Send me message on instagram",
             link: "https://www.instagram.com/neckitwin/"
         }
-    ]);
+    ]
 
     return (
         <main>
@@ -125,13 +124,13 @@ const Main = () => {
                 <h2>PORTFOLIO</h2>
                 <p>Check out some of my work</p>
                 <div className="portfolio-bimg">
-                    {bigimg.map((el) => (
-                        <Pimg link={el.link} img={el.img}/>
+                    {bigimg.map((el, index) => (
+                        <Pimg key={index} link={el.link} img={el.img}/>
                     ))}
                 </div>
                 <div className="portfolio-simg">
-                    {smallimg.map((el) => (
-                        <Pimg img={el.img} link={el.link}/>
+                    {smallimg.map((el, index) => (
+                        <Pimg key={index} img={el.img} link={el.link}/>
                     ))}
                 </div>
                 <a href="https://github.com/NeckitWin">SEE MORE</a>
@@ -141,8 +140,8 @@ const Main = () => {
                 <h2>MY EXPERIENCE</h2>
                 <p>What I have experience working with</p>
                 <div className="contacts">
-                    {experience.map((el) => (
-                        <Contact key={el.title} img={el.img} title={el.title} description={el.description}
+                    {experience.map((el, index) => (
+                        <Contact key={index} img={el.img} title={el.title} description={el.description}
                                  link={el.link}/>
                     ))}
                 </div>
@@ -152,8 +151,8 @@ const Main = () => {
                 <h2>CONTACT</h2>
                 <p>Feel free to contact me for any project or collaboration</p>
                 <div className="contacts">
-                    {contacts.map((el) => (
-                        <Contact key={el.title} img={el.img} title={el.title} description={el.description}
+                    {contacts.map((el, index) => (
+                        <Contact key={index} img={el.img} title={el.title} description={el.description}
                                  link={el.link}/>
                     ))}
                 </div>

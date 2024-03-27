@@ -66,9 +66,18 @@ main{
 }
 
 @media (max-width: 768px) {
+    main {
+        width: 100%;
+    }
+
     .portfolio, .contact-bg, .experience-bg {
         width: 100%;
     }
+
+    .portfolio-bimg a, .portfolio a {
+        margin: 10px;
+    }
+
     .portfolio-bimg a img{
         width: 100%;
         height: 100%;
@@ -88,8 +97,9 @@ main{
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
     .contact-bg {
-        padding-bottom: 0;
+        padding-bottom: 30px;
     }
 }

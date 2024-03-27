@@ -24,6 +24,7 @@ footer div {
     flex-direction: column;
     height: 300px;
     margin-top: 50px;
+    z-index: 1;
 }
 
 @media (max-width: 768px) {
@@ -31,18 +32,17 @@ footer div {
         width: 100%;
         padding-top: 30px;
     }
-    footer>img {
-        width: 300px;
-        height: 200px;
-        left: -70%;
-        top: 0px;
-    }
     footer div {
-        z-index: 1;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-left: 320px
+    }
+    footer>img {
+        width: 240px;
+        height: 200px;
+        left: -300px;
+        top: 0px;
     }
 }
