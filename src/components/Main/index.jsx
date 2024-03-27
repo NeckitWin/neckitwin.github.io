@@ -9,8 +9,8 @@ const Main = () => {
         <main>
             <div className="skills-bg">
 
-                {data[0].skills.map((el) => (
-                    <Skill key={el.title} img={el.img} title={el.title} description={el.description}/>
+                {data[0].skills.map((el, index) => (
+                    <Skill key={index} img={el.img} title={el.title} description={el.description}/>
                 ))}
             </div>
             <div className="portfolio">
