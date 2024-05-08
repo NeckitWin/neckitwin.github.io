@@ -1,0 +1,89 @@
+.navbar {
+    background-color: rgba(1, 1, 1, 0.8);
+    box-shadow: 0 0 1px #fff;
+    animation: 0.5s ease-out 1 slideInFromLeft;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    text-shadow: 0 0 10px #fff, 0 0 30px #ff00de;
+} .navbar a:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    transform: translateY(2px);
+  }
+
+.navbar nav {
+    max-width: 1200px;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.utility {
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    height: 100%;
+}
+
+.visible {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease;
+}
+
+.utility:hover .visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(50px);
+}
+.utility li > img {
+    width: 25px;
+    height: 25px;
+}
+
+.languages {
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    position: relative;
+    left: -50px;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    background-size: cover;
+    cursor: pointer;
+    transition: 0.3s ease;
+} .circle:hover {
+    transform: scale(1.05);
+}
+
+  @media screen and (max-width: 768px) {
+    .navbar nav {
+        padding: 10px;
+    }
+  }
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
