@@ -8,5 +8,10 @@
     "name": "JMonkeyEngine",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Jmonkey-logo-head-tilted.png",
     "color": "rgba(250, 200, 0, 0.3)"
+  },
+  {
+    "name": "Godot",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Godot_icon.svg",
+    "color": "rgba(0, 190, 210, 0.3)"
   }
 ]

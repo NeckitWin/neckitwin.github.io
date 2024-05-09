@@ -1,9 +1,10 @@
 import s from './Main.module.css';
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
 import plangs from './Data/plangs.json';
 import libs from './Data/libs.json';
 import engines from './Data/engines.json';
 import tools from './Data/tools.json';
+import Exp from "./Exp";
 
 const Main = () => {
     const {t} = useTranslation();
@@ -17,30 +18,10 @@ const Main = () => {
                     <p>{t("description")}</p>
                 </section>
                 <section className={s.exp}>
-                    <h3>{t("languages")}</h3>
-                    <ul className={s.plangs}>
-                        {plangs.map(el => (
-                            <li style={{backgroundColor: el.color}}><img src={el.icon} alt={el.name}/>{el.name}</li>
-                        ))}
-                    </ul>
-                    <h3>{t("libs")}</h3>
-                    <ul className={s.plangs}>
-                        {libs.map(el => (
-                            <li style={{backgroundColor: el.color}}><img src={el.icon} alt={el.name}/>{el.name}</li>
-                        ))}
-                    </ul>
-                    <h3>{t("engines")}</h3>
-                    <ul className={s.plangs}>
-                        {engines.map(el => (
-                            <li style={{backgroundColor: el.color}}><img src={el.icon} alt={el.name}/>{el.name}</li>
-                        ))}
-                    </ul>
-                    <h3>{t("tools")}</h3>
-                    <ul className={s.plangs}>
-                        {tools.map(el => (
-                            <li style={{backgroundColor: el.color}}><img src={el.icon} alt={el.name}/>{el.name}</li>
-                        ))}
-                    </ul>
+                    <Exp title="plangs" data={plangs}/>
+                    <Exp title="libs" data={libs}/>
+                    <Exp title="engines" data={engines}/>
+                    <Exp title="tools" data={tools}/>
                 </section>
             </div>
             <div className={s.rightPart}>
