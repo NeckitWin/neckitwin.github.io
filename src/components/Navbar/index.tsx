@@ -9,7 +9,7 @@ const backgrounds = [
 ]
 
 const Navbar = () => {
-    const { t, i18n} = useTranslation();
+    const { i18n} = useTranslation();
     const [language, setLanguage] = useState(localStorage.getItem('language') || 'en');
     const [background, setBackground] = useState(localStorage.getItem('background') || backgrounds[0]);
 

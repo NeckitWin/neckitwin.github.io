@@ -1,0 +1,68 @@
+main {
+    background-color: rgb(0, 0, 0, 0.8);
+    max-width: 1200px;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    margin: 20px auto;
+    box-shadow: 0 0 10px #fff;
+    flex-wrap: wrap;
+}
+
+.leftPart {
+    padding: 50px;
+    border-right: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile img {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #fff;
+    animation: 0.5s ease-out 1 slideInFromLeft;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.plangs {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.plangs li{
+    border-radius: 5px;
+    padding: 2px 6px 2px 2px;
+    gap: 4px;
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    animation: 0.5s ease-out 1 slideInFromLeft;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.plangs li:hover {
+    transform: translateY(-2px);
+}
+
+.plangs img {
+    width: 30px;
+    height: 30px;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
