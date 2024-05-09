@@ -1,4 +1,8 @@
 {
   "name": "Mykyta Vinohradov",
-  "description": "Java/JS entwickler"
+  "description": "Java/JS entwickler",
+  "languages": "Programmiersprachen",
+  "libs": "Bibliotheken & Frameworks",
+  "engines deutch": "Engines",
+  "tools deuch": "Werkzeuge"
 }

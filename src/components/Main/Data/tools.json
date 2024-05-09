@@ -1,0 +1,22 @@
+[
+  {
+    "name": "IntelliJ IDEA",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IntelliJ_IDEA_Icon.svg/2048px-IntelliJ_IDEA_Icon.svg.png",
+    "color": "rgba(255,53,53,0.3)"
+  },
+  {
+    "name": "WebStorm",
+    "icon": "https://static-00.iconduck.com/assets.00/webstorm-icon-2048x2048-dj0at5b7.png",
+    "color": "rgba(0,196,255,0.3)"
+  },
+  {
+    "name": "Visual Studio",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Visual_Studio_Icon_2019.svg/2048px-Visual_Studio_Icon_2019.svg.png",
+    "color": "rgba(128,0,255,0.3)"
+  },
+  {
+    "name": "Visual Studio Code",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png",
+    "color": "rgba(0,128,255,0.3)"
+  }
+]

@@ -77,6 +77,14 @@
     .navbar nav {
         padding: 10px;
     }
+
+      .utility {
+        gap: 6px;
+      }
+
+      .languages {
+        gap: 6px;
+      }
   }
 
 @keyframes slideInFromLeft {

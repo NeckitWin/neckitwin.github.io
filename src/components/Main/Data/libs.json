@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Node JS",
+    "icon": "https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png",
+    "color": "rgba(140, 200, 75, 0.3)"
+  },
+  {
+    "name": "React",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+    "color": "rgba(97, 218, 251, 0.3)"
+  },
+  {
+    "name": "Vue",
+    "icon": "https://static-00.iconduck.com/assets.00/vue-icon-2048x1766-ntogpmti.png",
+    "color": "rgba(65, 184, 131, 0.3)"
+  }
+]
