@@ -27,8 +27,8 @@ main {
     width: 200px;
     border-radius: 50%;
     box-shadow: 0 0 10px #fff;
-    animation: 0.5s ease-out 1 slideInFromLeft;
     margin-bottom: 6px;
+    animation: 0.6s ease-out 1 slideInFromLeft;
 }
 
 .rightPart {
@@ -39,7 +39,7 @@ main {
 }
 
 section {
-    animation: 0.5s ease-out 1 slideInFromLeft;
+    animation: 0.8s ease-out 1 slideInFromLeft;
 }
 
 .rightPart h3 {
@@ -80,6 +80,7 @@ section {
 
     .leftPart {
         box-shadow: none;
+        padding: 20px;
     }
 }
 
