@@ -2,11 +2,7 @@ import s from './Navbar.module.css'
 import {useEffect, useState} from "react";
 import languages from './language.json';
 import {useTranslation} from "react-i18next";
-
-const backgrounds = [
-    'https://i.redd.it/1asyzovvrn8a1.gif',
-    'https://windowscustomization.com/wp-content/uploads/2020/02/Neon.gif',
-]
+import backgrounds from './backgrounds.json';
 
 const Navbar = () => {
     const { i18n} = useTranslation();
@@ -33,12 +29,11 @@ const Navbar = () => {
                 <div className={s.utility}>
                     <img className={s.circle} src={languages.find(l => l.name === language)?.icon} alt={language}/>
                     <ul className={`${s.languages} ${s.visible}`}>
-                        {languages.map(language => (
-                            <li key={language.name}>
+                        {languages.map((language, index) => (
+                            <li key={index}>
                                 <img src={language.icon} alt={language.name} className={s.circle} onClick={()=>changeLanguage(language.name)}/>
                             </li>
                         ))}
-                        {/*<p>{t("test")}</p>*/}
                     </ul>
                     <img onClick={changeBackground} style={{backgroundImage: `url(${background})`}} className={s.circle}/>
                 </div>

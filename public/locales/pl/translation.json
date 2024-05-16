@@ -4,5 +4,8 @@
   "plangs": "Języki programowania",
   "libs": "Biblioteki",
   "engines": "Silniki",
-  "tools": "Narzędzia"
+  "tools": "Narzędzia",
+  "about": "O MNIE",
+  "aboutText": "Nazywam się Nikita. Urodziłem się w Ukrainie, ale obecnie mieszkam w Polsce. Głównie zajmuję się tworzeniem gier, stron internetowych i projektowaniem grafiki.",
+  "contact": "KONTAKTY"
 }

@@ -1,5 +1,5 @@
 .navbar {
-    background-color: rgba(1, 1, 1, 0.8);
+    background-color: rgba(1, 1, 1, 0.9);
     box-shadow: 0 0 1px #fff;
     animation: 0.5s ease-out 1 slideInFromLeft;
 }
@@ -46,6 +46,15 @@
     visibility: visible;
     transform: translateX(50px);
 }
+
+.utility:hover > img:first-child {
+    transition: 0.5s ease;
+}
+
+.utility:hover > img:first-child {
+    transform: rotate(360deg);
+}
+
 .utility li > img {
     width: 25px;
     height: 25px;

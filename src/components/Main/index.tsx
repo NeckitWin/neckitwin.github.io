@@ -1,9 +1,10 @@
 import s from './Main.module.css';
-import { useTranslation } from "react-i18next";
+import {useTranslation} from "react-i18next";
 import plangs from './Data/plangs.json';
 import libs from './Data/libs.json';
 import engines from './Data/engines.json';
 import tools from './Data/tools.json';
+import contacts from './Data/contacts.json';
 import Exp from "./Exp";
 
 const Main = () => {
@@ -25,8 +26,20 @@ const Main = () => {
                 </section>
             </div>
             <div className={s.rightPart}>
-
-
+                <section className={s.about}>
+                    <h3>{t("about")}</h3>
+                    <p>{t("aboutText")}</p>
+                </section>
+                <section className={s.contacts}>
+                    <h3>{t("contact")}</h3>
+                    <ul className={s.contacts_list}>
+                        {contacts.map((contact, index) => (
+                            <li key={index}>
+                                <a target="_blank" href={contact.link}><img src={`${contact.icon}`} alt={contact.name}/></a>
+                            </li>
+                        ))}
+                    </ul>
+                </section>
             </div>
         </main>
     )

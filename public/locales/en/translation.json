@@ -4,5 +4,8 @@
   "plangs": "Programming Languages",
   "libs": "Libraries & Frameworks",
   "engines": "Engines",
-  "tools": "Tools"
+  "tools": "Tools",
+  "about": "ABOUT ME",
+  "aboutText": "My name is Nikita. I was born in Ukraine, currently I reside in Poland. I am primarily engaged in game development, website development, and graphics design.",
+  "contact": "CONTACTS"
 }

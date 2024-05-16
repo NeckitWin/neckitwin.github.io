@@ -16,8 +16,8 @@ const Exp = (props: Exp) => {
         <>
             <h3 className={s.exp_title}>{t(props.title)}</h3>
             <ul className={s.plangs}>
-                {(props.data).map(el => (
-                    <li style={{backgroundColor: el.color}}><img src={el.icon} alt={el.name}/>{el.name}</li>
+                {(props.data).map((el, index) => (
+                    <li key={index} style={{backgroundColor: el.color}}><img src={el.icon} alt={el.name}/>{el.name}</li>
                 ))}
             </ul>
         </>
