@@ -7,7 +7,7 @@ import './18n';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div><img src="loading.gif" alt="loading"/></div>}>
             <App/>
         </Suspense>
     </React.StrictMode>,
