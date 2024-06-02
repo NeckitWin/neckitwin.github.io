@@ -1,7 +1,7 @@
 [
   {
     "name": "Node JS",
-    "icon": "https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png",
+    "icon": "https://seeklogo.com/images/N/node-js-logo-F4F55CD2D0-seeklogo.com.png",
     "color": "rgba(140, 200, 75, 0.3)"
   },
   {
@@ -11,7 +11,7 @@
   },
   {
     "name": "Vue",
-    "icon": "https://static-00.iconduck.com/assets.00/vue-icon-2048x1766-ntogpmti.png",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png",
     "color": "rgba(65, 184, 131, 0.3)"
   }
 ]

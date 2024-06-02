@@ -1,10 +1,5 @@
 [
   {
-    "name": "discord",
-    "link": "https://discord.gg/btM4yg3jgA",
-    "icon": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/discord-white-icon.png"
-  },
-  {
     "name": "github",
     "link": "https://github.com/neckitwin",
     "icon": "https://github.githubassets.com/favicons/favicon-dark.png"
@@ -15,8 +10,8 @@
     "icon": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/instagram-white-icon.png"
   },
   {
-    "name": "tiktok",
-    "link": "https://www.tiktok.com/@neckitwin",
-    "icon": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/tiktok-white-icon.png"
+    "name": "telegram",
+    "link": "https://t.me/neckitwin",
+    "icon": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/telegram-white-icon.png"
   }
 ]

@@ -7,7 +7,7 @@ import backgrounds from './backgrounds.json';
 const Navbar = () => {
     const { i18n} = useTranslation();
     const [language, setLanguage] = useState(localStorage.getItem('language') || 'en');
-    const [background, setBackground] = useState(localStorage.getItem('background') || backgrounds[0]);
+    const [background, setBackground] = useState(localStorage.getItem('background') || backgrounds[2]);
 
     const changeLanguage = async (language: string) => {
         setLanguage(language);
