@@ -1,15 +1,5 @@
 [
   {
-    "name": "Java",
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Java-logo.png",
-    "color": "rgba(255,53,53,0.3)"
-  },
-  {
-    "name": "Kotlin",
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png",
-    "color": "rgba(255,152,0,0.3)"
-  },
-  {
     "name": "JavaScript",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
     "color": "rgba(255,215,0,0.3)"
@@ -25,7 +15,17 @@
     "color": "rgba(0,157,255,0.3)"
   },
   {
-    "name": "MySQL",
+    "name": "Java",
+    "icon": "https://static-00.iconduck.com/assets.00/java-icon-1511x2048-6ikx8301.png",
+    "color": "rgba(255,53,53,0.3)"
+  },
+  {
+    "name": "Kotlin",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png",
+    "color": "rgba(255,152,0,0.3)"
+  },
+  {
+    "name": "SQL",
     "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968313.png",
     "color": "rgba(0,122,204,0.3)"
   }

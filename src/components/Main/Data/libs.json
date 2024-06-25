@@ -13,5 +13,10 @@
     "name": "Vue",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png",
     "color": "rgba(65, 184, 131, 0.3)"
+  },
+  {
+    "name": "Angular",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png",
+    "color": "rgba(255, 0, 0, 0.3)"
   }
 ]
