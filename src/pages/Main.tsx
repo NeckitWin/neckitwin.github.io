@@ -1,11 +1,4 @@
-const section = (caption:string) => {
-    return (
-        <div
-            className='text-center py-4 px-5 rounded-xl shadow-md shadow-bgColor bg-bgColor/50 text-textColor text-3xl underline underline-offset-8 decoration-primary font-medium m-2'>
-            {caption}
-        </div>
-    )
-}
+import Section from "../components/Section.tsx";
 
 function Main() {
     return (
@@ -19,8 +12,8 @@ function Main() {
                 <p>Im a fullstack developer, I love to code and learn new things. I have experience in web development
                     and I am currently learning mobile development.</p>
             </section>
-            {section('Projects')}
-            {section('Languages and Tools')}
+            <Section caption={'Projects'}/>
+            <Section caption={'Skills'}/>
         </main>
     )
 }
