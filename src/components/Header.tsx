@@ -4,6 +4,8 @@ interface Social {
     icon: string;
 }
 
+const ownerName: string = 'Neo'
+
 const socials: Social[] = [
     {
         title: 'Github',
@@ -22,7 +24,15 @@ const socials: Social[] = [
     }
 ]
 
-const ownerName: string = 'Neo'
+const socialButtons = socials.map((social) => (
+    <li key={social.title} className='flex items-center transition hover:-translate-y-0.5'>
+        <a href={social.link} target='_blank' rel='noreferrer'
+           className='bg-primary flex flex-row gap-1.5 text-white px-2 py-1.5 rounded-lg shadow-md shadow-primaryDark'>
+            <img src={social.icon} alt={social.title} className='w-6'/>
+            <span className='font-medium'>{social.title}</span>
+        </a>
+    </li>
+));
 
 function Header() {
     return (
@@ -35,15 +45,7 @@ function Header() {
                     <span className={`text-2xl font-bold text-white`}>{ownerName}</span>
                 </div>
                 <ul className='flex flex-row gap-2.5'>
-                    {socials.map((social) => (
-                        <li key={social.title} className='flex items-center transition hover:-translate-y-0.5'>
-                            <a href={social.link} target='_blank' rel='noreferrer'
-                               className={`bg-primary flex flex-row gap-1.5 text-white px-2 py-1.5 rounded-lg shadow-md shadow-primaryDark`}>
-                                <img src={social.icon} alt={social.title} className='w-6'/>
-                                <span className='font-medium'>{social.title}</span>
-                            </a>
-                        </li>
-                    ))}
+                    {socialButtons}
                 </ul>
             </div>
         </header>
