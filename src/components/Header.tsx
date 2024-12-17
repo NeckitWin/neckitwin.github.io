@@ -27,8 +27,8 @@ const socials: Social[] = [
 const socialButtons = socials.map((social:Social) => (
     <li key={social.title} className='flex items-center transition hover:-translate-y-0.5'>
         <a href={social.link} target='_blank' rel='noreferrer'
-           className='bg-primary flex flex-row gap-1.5 text-white px-2 py-1.5 rounded-lg shadow-md shadow-primaryDark'>
-            <img src={social.icon} alt={social.title} className='w-6'/>
+           className='bg-primary flex items-center flex-row gap-1 sm:gap-1.5 text-white px-2 py-1.5 rounded-lg shadow-md shadow-primaryDark'>
+            <img src={social.icon} alt={social.title} className='sm:w-6 sm:h-6 w-4 h-4'/>
             <span className='font-medium'>{social.title}</span>
         </a>
     </li>

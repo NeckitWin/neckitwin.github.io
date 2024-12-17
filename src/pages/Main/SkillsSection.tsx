@@ -26,11 +26,11 @@ function SkillsSection() {
                     </button>
                 </nav>
                 {activeSection == 1 &&
-                    <section className='p-4'>
+                    <section className='sm:p-6'>
                         <ul className='flex flex-wrap gap-5'>
                             {Langs.map((lang: { title: string, icon: string, stars: number }) => (
                                 <li key={lang.title}
-                                    className='flex flex-col gap-1 justify-around bg-bgColor/50 p-2 rounded-lg shadow-md shadow-bgColor'>
+                                    className='flex flex-col gap-1 justify-around bg-bgColor/50 p-1.5 rounded-lg shadow-md shadow-bgColor'>
                                     <img src={lang.icon} alt={lang.title} className='w-20 h-20 rounded-full object-cover p-3 bg-bgColor' />
                                     <div className='flex flex-col items-center'>
                                         <p className='text-sm'>{lang.title}</p>

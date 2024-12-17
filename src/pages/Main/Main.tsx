@@ -29,7 +29,7 @@ function Main() {
                     <img src="/anima.png" alt="Anima" className='max-w-16 max-h-16 rounded-full'/>
                     <div>
                         <h3>Anima</h3>
-                        <p>
+                        <p className='sm:text-base text-sm'>
                             Discord Bot Anima is a bot that can help you with moderation and fun commands. It is a bot
                             that is constantly being updated and improved.
                         </p>
