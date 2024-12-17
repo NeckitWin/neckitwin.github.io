@@ -1,6 +1,6 @@
-import Section from "../components/Section.tsx";
-import CustomButtons from "../components/CustomButtons.tsx";
-import {useState} from "react";
+import Section from "../../components/Section.tsx";
+import CustomButton from "../../components/CustomButton.tsx";
+import SkillsSection from "./SkillsSection.tsx";
 
 const animaLinks = [
     {name: 'Invite', link: 'https://discord.com/oauth2/authorize?client_id=1187466797885182141'},
@@ -9,8 +9,6 @@ const animaLinks = [
 ];
 
 function Main() {
-    const [activeSection, setActiveSection] = useState<number>(1)
-
     return (
         <main>
             <section className='my-10 mx-2 text-textColor flex flex-col gap-2'>
@@ -37,27 +35,9 @@ function Main() {
                         </p>
                     </div>
                 </div>
-                <CustomButtons links={animaLinks}/>
+                <CustomButton links={animaLinks}/>
             </section>
-            <Section caption={'Skills'}/>
-            <section className='my-6 mx-2 text-textColor flex flex-col gap-2.5'>
-                <nav className='flex flex-row gap-5'>
-                    <button className=''
-                        onClick={() => setActiveSection(1)}>Language</button>
-                    <button className=''
-                        onClick={() => setActiveSection(2)}>Technology</button>
-                </nav>
-                {activeSection == 1 &&
-                    <section className={activeSection == 1 ? 'visible' : 'hidden'}>
-                        language
-                    </section>
-                }
-                {activeSection == 2 &&
-                    <section className={activeSection == 2 ? 'visible' : 'hidden'}>
-                        technology
-                    </section>
-                }
-            </section>
+            <SkillsSection />
         </main>
     )
 }
