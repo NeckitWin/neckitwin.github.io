@@ -52,7 +52,7 @@ const SkillsSection = () => {
         <>
             <Section caption={'Skills'} />
             <section className='my-6 mx-2 text-textColor flex flex-col gap-2.5'>
-                <nav className='flex flex-row gap-1.5 w-full bg-bgColor/50 rounded-2xl p-1.5'>
+                <nav className='flex flex-row gap-1.5 w-full bg-bgColor/50 rounded-2xl p-1.5 flex-wrap sm:flex-nowrap'>
                     {buttons.map((button) => (
                         <button
                             key={button.id}
