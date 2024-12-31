@@ -1,51 +1,72 @@
 import Section from "../../components/Section.tsx";
-import {useState} from "react";
-import Langs from './langs.json';
+import { useState, useMemo } from "react";
+import data from './skills.json';
+
+interface Lang {
+    title: string;
+    icon: string;
+    stars?: number;
+}
 
 const buttons = [
-    {name: 'Languages', id: 1},
-    {name: 'Other', id: 2},
-]
+    { name: 'Libs & Frameworks', id: 1 },
+    { name: 'Stack', id: 2 },
+    { name: 'Technologies', id: 3 },
+    { name: 'Languages', id: 4 }
+];
+
+interface SkillContentProps {
+    data: Lang[];
+}
+
+const SkillContent = ({ data }: SkillContentProps) => {
+    return (
+        <ul className="flex flex-wrap gap-4 sm:mx-8">
+            {data.map((item) => (
+                <li key={item.title} className="flex flex-col gap-1 justify-around items-center bg-bgColor/50 p-1.5 rounded-lg shadow-md shadow-bgColor w-24">
+                    <img src={item.icon} alt={item.title} className="w-20 h-20 rounded-3xl object-cover p-3 bg-bgColor" />
+                    <div className="flex flex-col items-center">
+                        <p className="text-sm break-words text-center">{item.title}</p>
+                        {item.stars !== undefined && <p className="text-xs">{"⭐".repeat(item.stars)}</p>}
+                    </div>
+                </li>
+            ))}
+        </ul>
+    );
+};
 
 const SkillsSection = () => {
     const [activeSection, setActiveSection] = useState<number>(1);
+
+    const activeData = useMemo(() => {
+        switch (activeSection) {
+            case 1: return data.libs;
+            case 2: return data.stack;
+            case 3: return data.tech;
+            case 4: return data.langs;
+            default: return [];
+        }
+    }, [activeSection]);
+
     return (
         <>
-            <Section caption={'Skills'}/>
+            <Section caption={'Skills'} />
             <section className='my-6 mx-2 text-textColor flex flex-col gap-2.5'>
                 <nav className='flex flex-row gap-1.5 w-full bg-bgColor/50 rounded-2xl p-1.5'>
                     {buttons.map((button) => (
-                        <button key={button.id} className={`py-2 w-full rounded-xl transition
-                        ${activeSection == button.id ? 'bg-gradient-to-br from-primary to-primaryDark shadow-md shadow-primaryDark' : 'hover:bg-neutral-800'}`}
-                                onClick={() => setActiveSection(button.id)}>
+                        <button
+                            key={button.id}
+                            className={`py-2 w-full rounded-xl transition ${activeSection === button.id ? 'bg-gradient-to-br from-primary to-primaryDark shadow-md shadow-primaryDark' : 'hover:bg-neutral-800'}`}
+                            onClick={() => setActiveSection(button.id)}
+                        >
                             {button.name}
                         </button>
                     ))}
                 </nav>
-                {activeSection == 1 &&
-                    <section className='sm:p-6'>
-                        <ul className='flex flex-wrap gap-5'>
-                            {Langs.map((lang: { title: string, icon: string, stars: number }) => (
-                                <li key={lang.title}
-                                    className='flex flex-col gap-1 justify-around bg-bgColor/50 p-1.5 rounded-lg shadow-md shadow-bgColor'>
-                                    <img src={lang.icon} alt={lang.title} className='w-20 h-20 rounded-full object-cover p-3 bg-bgColor' />
-                                    <div className='flex flex-col items-center'>
-                                        <p className='text-sm'>{lang.title}</p>
-                                        <p className='text-xs'>{"⭐".repeat(lang.stars)}</p>
-                                    </div>
-                                </li>
-                            ))}
-                        </ul>
-                    </section>
-                }
-                {activeSection == 2 &&
-                    <section>
-                        <h3>Other</h3>
-                    </section>
-                }
+                <SkillContent data={activeData} />
             </section>
         </>
-    )
-}
+    );
+};
 
 export default SkillsSection;

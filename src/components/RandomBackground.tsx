@@ -2,12 +2,12 @@ import { useEffect, useState, useRef } from "react";
 
 interface RandomBackgroundProps {
     emoji: string;
-    colors: string[];
+    colors?: string[];
     count?: number;
     fontSize?: string;
 }
 
-const RandomBackground = ({ emoji, colors, count = 20, fontSize = "1rem" }: RandomBackgroundProps) => {
+const RandomBackground = ({ emoji, colors = ['#ffffff'], count = 20, fontSize = "1rem" }: RandomBackgroundProps) => {
     const [positions, setPositions] = useState<Array<{ x: number; y: number; rotation: number; color: string }>>([]);
     const positionsRef = useRef(positions);
 

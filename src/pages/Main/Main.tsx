@@ -19,8 +19,7 @@ function Main() {
                         Programmer
                     </span>
                 </div>
-                <p>Im a fullstack developer, I love to code and learn new things. I have experience in web development
-                    and I am currently learning mobile development.</p>
+                <p>I am a full-stack developer, I love coding, learning, and discovering new things. I have experience in website development, bots, business logic, and graphics. I am also studying game and mobile dev.</p>
             </section>
             <Section caption={'Projects'}/>
             <section

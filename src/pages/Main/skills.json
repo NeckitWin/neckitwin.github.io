@@ -1,0 +1,148 @@
+{
+  "stack": [
+    {
+      "title": "TypeScript",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Typescript.svg/96px-Typescript.svg.png",
+      "stars": 5
+    },
+    {
+      "title": "JavaScript",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/96px-Unofficial_JavaScript_logo_2.svg.png",
+      "stars": 5
+    },
+    {
+      "title": "MariaDB",
+      "icon": "https://cdn.icon-icons.com/icons2/3912/PNG/512/mariadb_logo_icon_247781.png",
+      "stars": 5
+    },
+    {
+      "title": "MySQL",
+      "icon": "https://cdn.icon-icons.com/icons2/2699/PNG/512/mysql_logo_icon_169940.png",
+      "stars": 5
+    },
+    {
+      "title": "Java",
+      "icon": "https://cdn-icons-png.flaticon.com/512/226/226777.png",
+      "stars": 4
+    },
+    {
+      "title": "Kotlin",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kotlin_Icon.svg/1200px-Kotlin_Icon.svg.png",
+      "stars": 3
+    },
+    {
+      "title": "C++",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/180px-ISO_C%2B%2B_Logo.svg.png",
+      "stars": 3
+    }
+  ],
+  "libs": [
+    {
+      "title": "Node.js",
+      "icon": "https://cdn.iconscout.com/icon/free/png-256/free-node-js-logo-icon-download-in-svg-png-gif-file-formats--nodejs-programming-language-pack-logos-icons-1174925.png",
+      "stars": 5
+    },
+    {
+      "title": "React",
+      "icon": "https://cdn.iconscout.com/icon/free/png-256/free-react-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-vol-5-pack-logos-icons-2945110.png",
+      "stars": 5
+    },
+    {
+      "title": "Next.js",
+      "icon": "https://static-00.iconduck.com/assets.00/next-js-icon-2048x2048-5dqjgeku.png",
+      "stars": 5
+    },
+    {
+      "title": "Angular",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png",
+      "stars": 3
+    },
+    {
+      "title": "Tailwind CSS",
+      "icon": "https://shadowblood.gallerycdn.vsassets.io/extensions/shadowblood/tailwind-moon/3.0.2/1673948732518/Microsoft.VisualStudio.Services.Icons.Default",
+      "stars": 5
+    },
+    {
+      "title": "Bootstrap",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png",
+      "stars": 4
+    },
+    {
+      "title": "React Router",
+      "icon": "https://www.loginradius.com/blog/static/a53096b6796dd3d1e3f3df8bc77a6689/03979/index.png",
+      "stars": 5
+    },
+    {
+      "title": "i18next",
+      "icon": "https://avatars.githubusercontent.com/u/8546082?s=280&v=4",
+      "stars": 5
+    },
+    {
+      "title": "Express",
+      "icon": "https://img.icons8.com/color/512/express-js.png",
+      "stars": 5
+    },
+    {
+      "title": "Axios",
+      "icon": "https://user-images.githubusercontent.com/8939680/57233882-20344080-6fe5-11e9-9086-d20a955bed59.png",
+      "stars": 5
+    },
+    {
+      "title": "Discord.js",
+      "icon": "https://avatars.githubusercontent.com/u/26492485?s=280&v=4",
+      "stars": 5
+    }
+  ],
+  "tech": [
+    {
+      "title": "WebStorm",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/WebStorm_Icon.svg/1200px-WebStorm_Icon.svg.png"
+    },
+    {
+      "title": "Visual Studio Code",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png"
+    },
+    {
+      "title": "Android Studio",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Android_Studio_Logo_2024.svg/800px-Android_Studio_Logo_2024.svg.png"
+    },
+    {
+      "title": "Photoshop",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png"
+    },
+    {
+      "title": "Figma",
+      "icon": "https://www.svgrepo.com/show/452202/figma.svg"
+    },
+    {
+      "title": "Git",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1200px-Git_icon.svg.png"
+    },
+    {
+      "title": "Scrumban",
+      "icon": "https://cdn-icons-png.flaticon.com/512/3476/3476227.png"
+    }
+  ],
+  "langs": [
+    {
+      "title": "English",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/800px-Flag_of_the_United_Kingdom_%281-2%29.svg.png"
+    },
+    {
+      "title": "Polish",
+      "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/1200px-Flag_of_Poland.svg.png"
+    },
+    {
+      "title": "German",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/2560px-Flag_of_Germany.svg.png"
+    },
+    {
+      "title": "Ukrainian",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/1200px-Flag_of_Ukraine.svg.png"
+    },
+    {
+      "title": "Russian",
+      "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/800px-Flag_of_Russia.svg.png"
+    }
+  ]
+}
