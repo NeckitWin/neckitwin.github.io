@@ -11,6 +11,11 @@
       "stars": 5
     },
     {
+      "title": "HTML + CSS",
+      "icon": "https://i.imgur.com/l5aUAnu.png",
+      "stars": 5
+    },
+    {
       "title": "MariaDB",
       "icon": "https://cdn.icon-icons.com/icons2/3912/PNG/512/mariadb_logo_icon_247781.png",
       "stars": 5
@@ -33,7 +38,7 @@
     {
       "title": "C++",
       "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/180px-ISO_C%2B%2B_Logo.svg.png",
-      "stars": 3
+      "stars": 2
     }
   ],
   "libs": [
