@@ -1,19 +1,13 @@
 import Section from "../../components/Section.tsx";
 import { useState, useMemo } from "react";
 import data from './skills.json';
+import {useTranslation} from "react-i18next";
 
 interface Lang {
     title: string;
     icon: string;
     stars?: number;
 }
-
-const buttons = [
-    { name: 'Libs & Frameworks', id: 1 },
-    { name: 'Stack', id: 2 },
-    { name: 'Technologies', id: 3 },
-    { name: 'Languages', id: 4 }
-];
 
 interface SkillContentProps {
     data: Lang[];
@@ -36,6 +30,7 @@ const SkillContent = ({ data }: SkillContentProps) => {
 };
 
 const SkillsSection = () => {
+    const {t} = useTranslation();
     const [activeSection, setActiveSection] = useState<number>(1);
 
     const activeData = useMemo(() => {
@@ -48,9 +43,16 @@ const SkillsSection = () => {
         }
     }, [activeSection]);
 
+    const buttons = [
+        { name: t("libs"), id: 1 },
+        { name: t("stack"), id: 2 },
+        { name: t("technology"), id: 3 },
+        { name: t("languages"), id: 4 }
+    ];
+
     return (
         <>
-            <Section caption={'Skills'} />
+            <Section caption={t("skills")} />
             <section className='my-6 mx-2 text-textColor flex flex-col gap-2.5'>
                 <nav className='flex flex-row gap-1.5 w-full bg-bgColor/50 rounded-2xl p-1.5 flex-wrap sm:flex-nowrap'>
                     {buttons.map((button) => (
