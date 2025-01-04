@@ -16,12 +16,7 @@ const socials: Social[] = [
         title: 'Telegram',
         link: 'https://t.me/neckitwin',
         icon: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/telegram-white-icon.png'
-    },
-    {
-        title: 'Instagram',
-        link: 'https://www.instagram.com/neckitwin',
-        icon: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/instagram-white-icon.png'
-    },
+    }
 ]
 
 const socialButtons = socials.map((social:Social) => (

@@ -25,9 +25,9 @@ function Main() {
             <section
                 className='my-10 mx-2 text-textColor p-6 rounded-2xl shadow-md bg-gradient-to-br from-pink-600 to-amber-600 shadow-neutral-900'>
                 <div className='flex flex-row gap-5 mb-5'>
-                    <img src="/anima.png" alt="Anima" className='max-w-16 max-h-16 rounded-full'/>
+                    <img src="/discordBot.png" alt="Anima Picture Profile" className='max-w-16 max-h-16 rounded-2xl bg-bgColor/50 p-2'/>
                     <div>
-                        <h3>Anima</h3>
+                        <h3>Anima - Discord Bot</h3>
                         <p className='sm:text-base text-sm'>
                             Discord Bot Anima is a bot that can help you with moderation and fun commands. It is a bot
                             that is constantly being updated and improved.
