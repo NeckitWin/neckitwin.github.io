@@ -23,7 +23,7 @@ function Main() {
                 </div>
                 <p>{t("about")}</p>
             </section>
-            <Section caption={t("projects")}/>
+            <Section>{t("projects")}</Section>
             <section
                 className='my-10 mx-2 text-textColor p-6 rounded-2xl shadow-md bg-gradient-to-br from-pink-600 to-amber-600 shadow-neutral-900'>
                 <div className='flex flex-row gap-5 mb-5'>

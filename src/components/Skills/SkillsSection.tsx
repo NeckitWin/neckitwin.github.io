@@ -28,7 +28,7 @@ const SkillsSection = () => {
 
     return (
         <>
-            <Section caption={t("skills")} />
+            <Section>{t("skills")}</Section>
             <section className='my-6 mx-2 text-textColor flex flex-col gap-2.5'>
                 <SkillsNav activeSection={activeSection} setActiveSection={setActiveSection} buttons={buttons} />
                 <SkillsContent data={activeData} />
