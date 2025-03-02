@@ -1,6 +1,6 @@
-import Section from "../../components/Section.tsx";
-import CustomButton from "../../components/CustomButton.tsx";
-import SkillsSection from "./SkillsSection.tsx";
+import Section from "./Section.tsx";
+import CustomButton from "./CustomButton.tsx";
+import SkillsSection from "./Skills/SkillsSection.tsx";
 import {useTranslation} from "react-i18next";
 
 function Main() {

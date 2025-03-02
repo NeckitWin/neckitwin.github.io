@@ -60,7 +60,12 @@
     {
       "title": "Angular",
       "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png",
-      "stars": 3
+      "stars": 4
+    },
+    {
+      "title": "Vue",
+      "icon": "https://cdn.iconscout.com/icon/free/png-256/free-vue-logo-icon-download-in-svg-png-gif-file-formats--company-brand-world-logos-vol-5-pack-icons-282497.png?f=webp&w=256",
+      "stars": 4
     },
     {
       "title": "Tailwind CSS",
@@ -70,11 +75,21 @@
     {
       "title": "Bootstrap",
       "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png",
-      "stars": 4
+      "stars": 5
     },
     {
       "title": "Prisma",
       "icon": "https://icons.veryicon.com/png/o/business/vscode-program-item-icon/prisma.png",
+      "stars": 5
+    },
+    {
+      "title": "Redux Toolkit",
+      "icon": "https://redux-toolkit.js.org/img/favicon/favicon.ico",
+      "stars": 5
+    },
+    {
+      "title": "dnd kit",
+      "icon": "https://dndkit.com/favicon-32x32.png",
       "stars": 5
     },
     {

@@ -1,5 +1,5 @@
 import Header from "./components/Header.tsx";
-import Main from "./pages/Main/Main.tsx";
+import Main from "./components/Main.tsx";
 import RandomBackground from "./components/RandomBackground.tsx";
 import Footer from "./components/Footer.tsx";
 
