@@ -18,7 +18,7 @@ const socials: Social[] = [
     {
         title: 'Telegram',
         link: 'https://t.me/neckitwin',
-        icon: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/telegram-white-icon.png'
+        icon: 'icons/telegram.png'
     }
 ]
 
@@ -64,6 +64,7 @@ const Header = () => {
     const savedLang = localStorage.getItem('lang') || 'en';
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [lang, setLang] = useState(savedLang);
+    const currentLang = langList.find(l => l.code === lang);
 
     const {i18n} = useTranslation();
 
@@ -89,11 +90,12 @@ const Header = () => {
                 <div className='relative'>
                     <button onClick={() => setIsMenuOpen(!isMenuOpen)}
                             className='flex flex-row text-textColor items-center justify-center bg-bgColor p-2 rounded-xl box-border h-9 gap-1 shadow-md shadow-bgColor'>
-                        <img src={langList.find(l => l.code === lang)?.img}
-                             alt="english" className='w-6 h-6 rounded-xl p-0.5 object-cover'/>
-                        <span>{isMenuOpen ? "▲" : "▼"}</span>
+                        <img src={currentLang?.img}
+                             alt={currentLang?.lang} className='w-6 h-6 rounded-xl p-0.5 object-cover'/>
+                        <span className={`duration-150 ${isMenuOpen && '-rotate-180'}`}>{"▼"}</span>
                     </button>
-                    <ul className={`${isMenuOpen ? 'absolute' : 'hidden'} bg-bgColor p-4 mt-5 flex flex-col gap-2 rounded-xl w-max`}>
+                    <ul className={`absolute bg-bgColor p-4 mt-5 flex flex-col gap-2 rounded-xl w-max duration-150 
+                    ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
                         {langList.map((lang, index) => (
                             <li key={index} onClick={() => langHandler(lang.code)} className='flex flex-row gap-2 cursor-pointer'>
                                 <img src={lang.img} alt={lang.lang} className='w-6 h-6 rounded-xl p-0.5 object-cover'/>
