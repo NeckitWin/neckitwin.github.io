@@ -80,7 +80,7 @@ const Header = () => {
 
     return (
         <header
-            className='flex justify-between flex-wrap gap-3 py-4 px-5 rounded-xl shadow-md shadow-bgColor bg-bgColor/50'>
+            className='flex justify-between flex-wrap gap-3 py-4 px-5 rounded-xl shadow-md shadow-bgColor bg-[#1F1F1F]'>
             <div className='flex items-center gap-2.5'>
                 <img src="https://avatars.githubusercontent.com/u/90260450?v=4" alt="avatar"
                      className='w-10 rounded-full'/>

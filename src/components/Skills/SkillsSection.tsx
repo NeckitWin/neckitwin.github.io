@@ -1,6 +1,6 @@
 import Section from "../../components/Section.tsx";
 import { useState } from "react";
-import data from "../data/skills.json";
+import data from "../../data/skills.json";
 import { useTranslation } from "react-i18next";
 import SkillsContent from "./SkillsContent.tsx";
 import SkillsNav from "./SkillsNav.tsx";

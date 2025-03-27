@@ -14,7 +14,7 @@ function Main() {
 
     return (
         <main>
-            <section className='my-10 mx-2 text-textColor flex flex-col gap-2'>
+            <section className='my-10 mx-2 text-textColor flex flex-col gap-2 bg-[#262626] rounded-xl'>
                 <div className='flex flex-row'>
                     <h1 className='text-2xl font-medium'>{t("title")}</h1>
                     <span className='bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full px-2 py-1 flex items-center mx-2 mb-2.5 text-xs h-max'>
