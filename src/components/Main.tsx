@@ -9,7 +9,7 @@ function Main() {
     const animaLinks = [
         {name: t("invite"), link: 'https://discord.com/oauth2/authorize?client_id=1187466797885182141'},
         {name: t("support"), link: 'https://discord.gg/d8kCF4c3t5'},
-        {name: t("website"), link: 'https://neckitwin.github.io/Anima/'}
+        {name: t("website"), link: 'https://anima-bot.vercel.app/'}
     ];
 
     return (
