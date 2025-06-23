@@ -1,6 +1,6 @@
-import { useState } from "react"
-import ProfileCard from "./components/ProfileCard"
-import Navbar from "./components/NavBar";
+import { useState } from "react";
+import ProfileCard from "./components/ProfileCard";
+import Navbar from "./components/Navbar";
 
 const bgs: string[] = [
   "https://twistedsifter.com/wp-content/uploads/2013/05/animated-gifs-of-fighting-game-backgrounds-25.gif",
@@ -12,13 +12,13 @@ const App = () => {
   const [currentBg, setCurrentBg] = useState<string>(bgs[0]);
 
   return (
-    <div style={{backgroundImage: `url(${currentBg})`}} className="h-screen bg-cover bg-center">
+    <div style={{ backgroundImage: `url(${currentBg})` }} className="h-screen bg-cover bg-center duration-200">
       <header className="py-8">
-    <Navbar bgs={bgs} currentBg={currentBg} setCurrentBg={setCurrentBg} />
-    </header>
-    <ProfileCard />
+        <Navbar bgs={bgs} currentBg={currentBg} setCurrentBg={setCurrentBg} />
+      </header>
+      <ProfileCard />
     </div>
   )
 }
 
-export default App
+export default App;
