@@ -17,7 +17,7 @@ const Navbar = ({ bgs, currentBg, setCurrentBg }: NavbarProps) => {
     setCurrentBg(bgs[nextIndex])
   }
 
-  const changeTheme = () => {
+  const toggleTheme = () => {
     setDark(prev => {
       const newDark = !prev;
       if (newDark) {
@@ -30,22 +30,22 @@ const Navbar = ({ bgs, currentBg, setCurrentBg }: NavbarProps) => {
   }
 
   return (
-    <nav className="rounded-2xl w-max dark:bg-neutral-900/40 bg-neutral-50/40 dark:text-neutral-50 text-neutral-900 mx-auto backdrop-blur-xs duration-300">
+    <nav className="rounded-2xl w-max dark:bg-neutral-900/40 bg-neutral-50/40 dark:text-neutral-50 text-neutral-900 mx-auto backdrop-blur-lg duration-300">
       <ul className="flex text-center justify-center gap-4 items-center font-medium py-2 px-4">
         <li>
-          <button className="">Resume</button>
+          <button className="cursor-pointer">Resume</button>
         </li>
         <li>
-          <button className="">Experience</button>
+          <button className="cursor-pointer">Experience</button>
         </li>
         <li className="flex items-center justify-center gap-2">
-          <button onClick={changeTheme} className="flex items-center justify-center">
+          <button onClick={toggleTheme} className="flex items-center justify-center cursor-pointer">
             {dark ?
               <MoonIcon width={30} height={30} className="text-neutral-50 duration-200 active:rotate-360" /> :
               <SunIcon width={30} height={30} className="text-neutral-900 duration-200 active:rotate-360" />}
           </button>
-          <button onClick={setNextImage}>
-            <img src={currentBg} alt="background" className="w-7 h-7 rounded-full"  />
+          <button onClick={setNextImage} className="cursor-pointer">
+            <img src={currentBg} alt="background" className="w-7 h-7 rounded-full" />
           </button>
         </li>
       </ul>
