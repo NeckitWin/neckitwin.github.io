@@ -17,7 +17,7 @@ const socials: Social[] = [
     },
     {
         title: 'Telegram',
-        link: 'https://t.me/neckitwin',
+        link: 'https://t.me/nikitosikwin',
         icon: 'icons/telegram.png'
     }
 ]
