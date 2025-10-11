@@ -14,7 +14,7 @@ const DarkModeButton = () => {
     }, [isDark]);
 
     return (
-        <button className="h-6 w-6 active:rotate-90 transition cursor-pointer" onClick={() => setIsDark(!isDark)}>{isDark ? <MoonIcon className="fill-black stroke-black" /> : <SunIcon className="w-full h-full fill-white stroke-white" />}</button>
+        <button className="h-5 w-5 active:rotate-90 transition cursor-pointer" onClick={() => setIsDark(!isDark)}>{isDark ? <MoonIcon className="fill-black stroke-black" /> : <SunIcon className="w-full h-full fill-white stroke-white" />}</button>
     )
 }
 
