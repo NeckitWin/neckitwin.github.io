@@ -1,4 +1,7 @@
 import DarkModeButton from "../components/darkModeButton";
+import { content } from "../lib/constants/content";
+import DevIcon from "../ui/icons/devIcon";
+import MenuIcon from "../ui/icons/menuIcon";
 import ProfileIcon from "../ui/icons/profileIcon";
 
 const Header = () => {
@@ -14,8 +17,8 @@ const Header = () => {
                     </li>
                     <li>
                         <ul className="flex items-center gap-1">
-                            <li className="py-1.5 px-6 cursor-pointer rounded-xl dark:hover:bg-black/5 hover:bg-white/20 text-sm">Projects</li>
-                            <li className="py-1.5 px-6 cursor-pointer rounded-xl dark:hover:bg-black/5 hover:bg-white/20 text-sm">Stack</li>
+                            <li className="py-1.5 px-6 cursor-pointer rounded-xl dark:hover:bg-black/5 hover:bg-white/20 text-sm flex gap-1 items-center"><MenuIcon className="fill-white h-4 w-4" /><span>{content.navigation.projects}</span></li>
+                            <li className="py-1.5 px-6 cursor-pointer rounded-xl dark:hover:bg-black/5 hover:bg-white/20 text-sm flex gap-1 items-center"><DevIcon className="fill-white h-4 w-4" /><span>{content.navigation.stack}</span></li>
                         </ul>
                     </li>
                     <li className="flex items-center py-1.5 px-4 rounded-xl dark:hover:bg-black/5 hover:bg-white/20"><DarkModeButton /></li>
