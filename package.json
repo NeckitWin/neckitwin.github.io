@@ -1,7 +1,7 @@
 {
   "name": "neckitwin",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "homepage": "https://neckitwin.github.io/",
   "type": "module",
   "scripts": {
