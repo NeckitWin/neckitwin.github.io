@@ -6,8 +6,8 @@ import MenuIcon from "../ui/icons/menuIcon";
 import ProfileIcon from "../ui/icons/profileIcon";
 
 const routes = [
-    { path: "/projects", icon: <MenuIcon className="fill-white dark:fill-black h-4 w-4" />, label: content.navigation.projects },
-    { path: "/stack", icon: <DevIcon className="fill-white dark:fill-black h-4 w-4" />, label: content.navigation.stack },
+    { path: "projects", icon: <MenuIcon className="fill-white dark:fill-black h-4 w-4" />, label: content.navigation.projects },
+    { path: "skills", icon: <DevIcon className="fill-white dark:fill-black h-4 w-4" />, label: content.navigation.skills },
 ]
 
 const Header = () => {

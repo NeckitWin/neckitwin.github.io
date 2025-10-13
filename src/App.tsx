@@ -2,6 +2,8 @@ import { Route, Routes } from "react-router"
 import Footer from "./modules/footer"
 import Header from "./modules/header"
 import Home from "./views/home"
+import Projects from "./views/projects"
+import Skills from "./views/skills"
 
 const App = () => {
   return (
@@ -10,6 +12,8 @@ const App = () => {
       <main className="flex flex-1 w-full">
         <Routes>
           <Route index element={<Home />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="skills" element={<Skills />} />
         </Routes>
       </main>
       <Footer />

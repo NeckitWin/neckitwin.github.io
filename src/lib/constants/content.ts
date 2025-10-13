@@ -1,7 +1,7 @@
 export const content = {
     navigation: {
         projects: "Projects",
-        stack: "Stack"
+        skills: "Skills"
     },
     home: {
         owner: "NeckitWin",
