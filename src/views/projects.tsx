@@ -1,21 +1,17 @@
 import Card, { type CardProps } from "../components/card";
 import CenterBox from "../components/centerBox";
+import GithubIcon from "../ui/icons/githubIcon";
+import InternetIcon from "../ui/icons/internetIcon";
 
 const projectList: CardProps[] = [
     {
         imageSrc: "bgAnima.png",
         title: "Anima - Discord Bot",
         description: "A multifunctional Discord bot with features like AI chat and more.",
-    },
-    {
-        imageSrc: "bgAnima.png",
-        title: "Anima - Discord Bot",
-        description: "A multifunctional Discord bot with features like AI chat and more.",
-    },
-    {
-        imageSrc: "bgAnima.png",
-        title: "Anima - Discord Bot",
-        description: "A multifunctional Discord bot with features like AI chat and more.",
+        buttons: [
+            { icon: <InternetIcon className="fill-white dark:fill-black" />, link: "https://anima-bot.vercel.app/" },
+            { icon: <GithubIcon className="fill-white dark:fill-black" />, link: "https://github.com/NeckitWin/Anima-DiscordBot" },
+        ]
     },
 ]
 
@@ -27,7 +23,7 @@ const Projects = () => {
                 <p className="text-neutral-300 dark:text-neutral-800 text-center mt-4">Here are some of my notable projects</p>
                 <ul className="flex flex-wrap gap-8 justify-center mt-8">
                     {projectList.map((project) => (
-                        <li key={project.title}><Card {...project} className="w-[400px]" /></li>
+                        <li className="basis-[30%]" key={project.title}><Card {...project} className="w-[400px]" /></li>
                     ))}
                 </ul>
             </section>
