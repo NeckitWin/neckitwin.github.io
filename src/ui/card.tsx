@@ -1,4 +1,4 @@
-import IconButton from "../ui/iconButton";
+import IconButton from "./iconButton";
 
 export interface CardProps {
     imageSrc: string;
@@ -16,8 +16,8 @@ const Card = ({ imageSrc, title, description, buttons, className }: CardProps) =
                 <h5 className="text-lg font-semibold">{title}</h5>
                 <p className="text-sm">{description}</p>
                 {buttons?.length && <div className="flex flex-row justify-self-end gap-4">
-                    {buttons?.map((btn) => (
-                        <IconButton link={btn.link}>{btn.icon}</IconButton>
+                    {buttons?.map((btn, index) => (
+                        <IconButton key={index} link={btn.link}>{btn.icon}</IconButton>
                     ))}
                 </div>}
             </div>

@@ -1,4 +1,7 @@
 export const content = {
+    header: {
+        location: "📍Europe/Poland"
+    },
     navigation: {
         projects: "Projects",
         skills: "Skills"
@@ -11,4 +14,10 @@ export const content = {
     footer: {
         copyright: "©2025 by NeckitWin"
     },
+    projects: {
+        description: "Here are some of my notable projects"
+    },
+    skills: {
+        description: "Here are some of my technical skills and proficiencies"
+    }
 }

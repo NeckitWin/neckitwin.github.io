@@ -1,5 +1,6 @@
-import Card, { type CardProps } from "../components/card";
+import Card, { type CardProps } from "../ui/card";
 import CenterBox from "../components/centerBox";
+import { content } from "../lib/constants/content";
 import GithubIcon from "../ui/icons/githubIcon";
 import InternetIcon from "../ui/icons/internetIcon";
 
@@ -19,8 +20,8 @@ const Projects = () => {
     return (
         <CenterBox>
             <section className="text-white dark:text-black">
-                <h3 className="font-bold text-5xl text-center">Projects</h3>
-                <p className="text-neutral-300 dark:text-neutral-800 text-center mt-4">Here are some of my notable projects</p>
+                <h3 className="font-bold text-5xl text-center">{content.navigation.projects}</h3>
+                <p className="text-neutral-300 dark:text-neutral-800 text-center mt-4">{content.projects.description}</p>
                 <ul className="flex flex-wrap gap-8 justify-center mt-8">
                     {projectList.map((project) => (
                         <li className="basis-[30%]" key={project.title}><Card {...project} className="w-[400px]" /></li>

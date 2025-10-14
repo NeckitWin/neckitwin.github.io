@@ -25,7 +25,7 @@ const Header = () => {
                 </ul>
                 <div className="flex items-center py-1.5 px-4 rounded-xl dark:hover:bg-black/5 hover:bg-white/20 cursor-pointer duration-200"><DarkModeButton /></div>
             </nav>
-            <span className="font-medium w-48 text-end">📍Europe/Poland</span>
+            <span className="font-medium w-48 text-end">{content.header.location}</span>
         </header>
     )
 }
