@@ -1,21 +1,24 @@
-import Header from "./components/Header.tsx";
-import Main from "./components/Main.tsx";
-import Footer from "./components/Footer.tsx";
-import ParticlesBackground from "./components/ParticlesBackground.tsx";
+import { Route, Routes } from "react-router"
+import Footer from "./modules/footer"
+import Header from "./modules/header"
+import Home from "./views/home"
+import Projects from "./views/projects"
+import Skills from "./views/skills"
 
-function App() {
-
-
-    return (
-        <>
-            <div className='container mx-auto max-w-5xl p-6 relative z-10'>
-                <Header/>
-                <Main/>
-                <Footer />
-            </div>
-            <ParticlesBackground />
-        </>
-    )
+const App = () => {
+  return (
+    <div className="flex flex-col min-h-screen dark:bg-neutral-200 bg-black/[96%] duration-300">
+      <Header />
+      <main className="flex flex-1 w-full">
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="skills" element={<Skills />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
+  )
 }
 
 export default App;
