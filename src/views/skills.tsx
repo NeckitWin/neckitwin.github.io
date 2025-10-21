@@ -53,7 +53,7 @@ const Skills = () => {
             <section className="text-white dark:text-black">
                 <h3 className="font-bold text-5xl text-center">{content.navigation.skills}</h3>
                 <p className="text-neutral-300 dark:text-neutral-800 text-center mt-4">{content.skills.description}</p>
-                <div className="flex flex-col gap-4 mt-4">
+                <div className="flex flex-col gap-4 mt-4 mx-4 md:mx-0">
                     <SkillsSection title="Main Stack" skills={mainStack} />
                     <SkillsSection title="Languages" skills={languages} />
                     <SkillsSection title="Frameworks & libs" skills={frameworks} />

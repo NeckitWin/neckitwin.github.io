@@ -24,7 +24,7 @@ const Projects = () => {
                 <p className="text-neutral-300 dark:text-neutral-800 text-center mt-4">{content.projects.description}</p>
                 <ul className="flex flex-wrap gap-8 justify-center mt-8">
                     {projectList.map((project) => (
-                        <li className="basis-[30%]" key={project.title}><Card {...project} className="w-[400px]" /></li>
+                        <li className="basis-[30%]" key={project.title}><Card {...project} className="md:w-[400px] min-w-[320px]" /></li>
                     ))}
                 </ul>
             </section>
